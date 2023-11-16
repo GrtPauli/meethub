@@ -1,14 +1,12 @@
 import type { IncomingMessage } from "http";
 import type { AppContextType } from "next/dist/shared/lib/utils";
 import React, { useEffect, useState } from "react";
-
 import { trpc } from "@calcom/trpc/react";
-
 import type { AppProps } from "@lib/app-providers";
-
 import "../styles/globals.css";
 import ThemeButton from "@components/ui/ThemeButton";
 import { ThemeContextProvider, useThemeContext } from "context/ThemeContext";
+import { SessionProvider } from "next-auth/react";
 
 function MyApp(props: AppProps) {
   // const [currentTheme, setCurrentTheme] = useState<any>(null)
@@ -43,11 +41,13 @@ function MyApp(props: AppProps) {
   //     <ThemeButton/>
   //   </ThemeContextProvider>
   // );
-  return (
-    <ThemeContextProvider>
-      <Component {...pageProps} />
-      <ThemeButton/>
-    </ThemeContextProvider>
+  return ( 
+    <SessionProvider>
+      <ThemeContextProvider>
+        <Component {...pageProps} />
+        <ThemeButton/>
+      </ThemeContextProvider>
+    </SessionProvider>
   );
 }
 
