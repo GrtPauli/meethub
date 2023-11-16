@@ -10,7 +10,7 @@ import {
   FAVICON_32,
   IS_SELF_HOSTED,
   LOGO,
-  LOGODARK,
+  LOGO_DARK,
   LOGO_ICON,
   MSTILE_ICON,
   WEBAPP_URL,
@@ -40,7 +40,7 @@ const SYSTEM_SUBDOMAINS = ["console", "app", "www"];
 
 type LogoType =
   | "logo"
-  | "logo-dark"
+  | "logodark"
   | "icon"
   | "favicon-16"
   | "favicon-32"
@@ -61,8 +61,8 @@ const logoDefinitions: Record<LogoType, LogoTypeDefinition> = {
     fallback: `${WEBAPP_URL}${LOGO}`,
     source: "appLogo",
   },
-  "logo-dark": {
-    fallback: `${WEBAPP_URL}${LOGODARK}`,
+  logodark: {
+    fallback: `${WEBAPP_URL}${LOGO_DARK}`,
     source: "appLogo",
   },
   icon: {

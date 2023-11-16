@@ -24,14 +24,14 @@ export default function Logo({
           <>
             {theme != "dark" ? (
               <img
-                className={classNames(small ? "h-20 w-auto" : "h-24 w-auto", "dark:inv")}
+                className={classNames(small ? "h-16 w-auto" : "h-20 w-auto")}
                 alt="Cal"
                 title="Cal"
-                src={`${src}?type=logo-dark`}
+                src={`${src}?type=logodark`}
               />
             ) : (
               <img
-                className={classNames(small ? "h-20 w-auto" : "h-24 w-auto", "dark:inv")}
+                className={classNames(small ? "h-16 w-auto" : "h-20 w-auto")}
                 alt="Cal"
                 title="Cal"
                 src={src}

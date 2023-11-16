@@ -137,7 +137,7 @@
       */
     --cal-brand: #FB5201;
     --cal-brand-emphasis: #101010;
-    --cal-brand-text: white;
+    --cal-brand-text: #FB5201;
 }
 
 .meethub-dark{
@@ -182,13 +182,26 @@
       */
     --cal-brand: white;
     --cal-brand-emphasis: #e1e1e1;
-    --cal-brand-text: white;  
+    --cal-brand-text: #FB5201;  
 }
 
 @layer base {
   * {
     @apply border-default 
   }
+}
+
+.home-hero{
+  background-color: rgb(0 0 0 / 0.7);
+}
+
+.banner-bg{
+  background-color: rgba(251, 80, 1, 0.6);
+}
+
+.hero-main-text{
+  font-size: 45px;
+  /* line-height: 10px; */
 }
 
 .ant-float-btn.ant-float-btn-primary.ant-float-btn-circle
