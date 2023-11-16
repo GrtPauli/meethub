@@ -3,11 +3,13 @@ import React from 'react'
 import FavouriteApps from '~/home/components/FavouriteApps'
 import GetStarted from '~/home/components/GetStarted'
 import HomeHeroSection from '~/home/components/Hero'
+import Features from './components/Features'
 
 const HomePage = () => {
   return (
     <MainLayout>
         <HomeHeroSection/>
+        <Features/>
         <FavouriteApps/>
         <GetStarted/>
     </MainLayout>
