@@ -1,24 +1,9 @@
-import React from 'react'
-import HomePage from '~/home/page'
-import type { GetServerSidePropsContext } from "next";
-import { getServerSession } from "@calcom/features/auth/lib/getServerSession";
+import React from "react";
 
-interface IProps {
-  signedIn: boolean
-}
+import HomePage from "~/home/page";
 
 const Home = () => {
-  return <HomePage/>
-}
+  return <HomePage />;
+};
 
-export default Home
-
-// export async function getServerSideProps({ req, res }: GetServerSidePropsContext) {
-//   const session = await getServerSession({ req, res });
-
-//   if (!session?.user?.id) {
-//     return { signedIn: false };
-//   }
-
-//   return { signedIn: true };
-// }
+export default Home;

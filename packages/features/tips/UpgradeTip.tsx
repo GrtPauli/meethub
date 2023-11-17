@@ -15,7 +15,7 @@ export function UpgradeTip({
   children,
   theme,
   darkBackground,
-  lightBackground
+  lightBackground,
 }: {
   dark?: boolean;
   title: string;
@@ -27,9 +27,9 @@ export function UpgradeTip({
   /**Chldren renders when the user is in a team */
   children: JSX.Element;
   isParentLoading?: ReactNode;
-  theme?: any
-  darkBackground?: string 
-  lightBackground?: string
+  theme?: any;
+  darkBackground?: string;
+  lightBackground?: string;
 }) {
   const { t } = useLocale();
   const { isLoading, hasTeamPlan } = useHasTeamPlan();
@@ -40,7 +40,7 @@ export function UpgradeTip({
 
   return (
     <>
-      <div className="relative flex min-h-[295px] w-full items-center justify-between overflow-hidden rounded-lg pb-">
+      <div className="pb- relative flex min-h-[295px] w-full items-center justify-between overflow-hidden rounded-lg">
         {theme == "dark" ? (
           <picture className="absolute min-h-[295px] w-full rounded-lg object-cover">
             <source srcSet={`${darkBackground}.jpg`} media="(prefers-color-scheme: dark)" />
@@ -64,10 +64,8 @@ export function UpgradeTip({
         )}
 
         <div className="relative my-4 px-5 sm:px-10">
-          <h1 className={classNames("font-black text-3xl", "text-emphasis")}>{t(title)}</h1>
-          <p className={classNames("mb-8 mt-4 max-w-sm", "text-default")}>
-            {t(description)}
-          </p>
+          <h1 className={classNames("text-3xl font-black", "text-emphasis")}>{t(title)}</h1>
+          <p className={classNames("mb-8 mt-4 max-w-sm", "text-default")}>{t(description)}</p>
           {buttons}
         </div>
       </div>

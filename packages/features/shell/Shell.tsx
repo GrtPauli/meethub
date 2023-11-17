@@ -828,7 +828,7 @@ function SideBar({ bannersHeight, user }: SideBarProps) {
     <div className="relative">
       <aside
         style={{ maxHeight: `calc(100vh - ${bannersHeight}px)`, top: `${bannersHeight}px` }}
-        className="desktop-transparent bg-muted border-muted fixed left-0 hidden h-full max-h-screen w-14 flex-col overflow-y-auto overflow-x-hidden border-r md:sticky md:flex xl:w-64 lg:w-56 lg:px-3">
+        className="desktop-transparent bg-muted border-muted fixed left-0 hidden h-full max-h-screen w-14 flex-col overflow-y-auto overflow-x-hidden border-r md:sticky md:flex lg:w-56 lg:px-3 xl:w-64">
         <div className="flex h-full flex-col justify-between py-3 lg:pt-4">
           {/* <Link href="/event-types" className="text-center md:hidden lg:inline">
             <Logo small />
@@ -931,9 +931,8 @@ function SideBar({ bannersHeight, user }: SideBarProps) {
             type="submit"
             color="primary"
             size="lg"
-            className="w-full justify-center dark:bg-whit dark:text-blac !my-2"
-            onClick={() => signOut({ callbackUrl: "/auth/logout" })}
-          >
+            className="dark:bg-whit dark:text-blac !my-2 w-full justify-center"
+            onClick={() => signOut({ callbackUrl: "/auth/logout" })}>
             {t("sign_out")}
           </Button>
           {/* {!IS_VISUAL_REGRESSION_TESTING && <Credits />} */}
@@ -976,9 +975,9 @@ export function ShellMain(props: LayoutProps) {
               <div
                 className={classNames("w-full truncate ltr:mr-4 rtl:ml-4 md:block", props.headerClassName)}>
                 {props.heading && (
-                  <h3 
+                  <h3
                     className={classNames(
-                      "font-ca max-w-28 sm:max-w-72 md:max-w-80 text-emphasis inline truncate text-lg font-black tracking-wide md:text-2xl sm:text-xl md:block xl:max-w-full",
+                      "font-ca max-w-28 sm:max-w-72 md:max-w-80 text-emphasis inline truncate text-lg font-black tracking-wide sm:text-xl md:block md:text-2xl xl:max-w-full",
                       props.smallHeading ? "text-base" : "text-2xl",
                       props.hideHeadingOnMobile && "hidden"
                     )}>
@@ -1077,6 +1076,5 @@ export const MobileNavigationMoreItems = () => (
     ))}
   </ul>
 );
-
 
 // #FF5300

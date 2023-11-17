@@ -1,4 +1,5 @@
 import { useAutoAnimate } from "@formkit/auto-animate/react";
+import { useThemeContext } from "context/ThemeContext";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { useCallback } from "react";
 
@@ -17,7 +18,6 @@ import { withQuery } from "@lib/QueryCell";
 
 import PageWrapper from "@components/PageWrapper";
 import SkeletonLoader from "@components/availability/SkeletonLoader";
-import { useThemeContext } from "context/ThemeContext";
 
 export function AvailabilityList({ schedules }: RouterOutputs["viewer"]["availability"]["list"]) {
   const { t } = useLocale();
@@ -135,7 +135,7 @@ export default function AvailabilityPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
-  const {theme} = useThemeContext()
+  const { theme } = useThemeContext();
 
   // Get a new searchParams string by merging the current
   // searchParams with a provided key/value pair
@@ -148,9 +148,9 @@ export default function AvailabilityPage() {
     },
     [searchParams]
   );
-  
-    console.log(theme);
-    
+
+  console.log(theme);
+
   return (
     <div>
       <ShellMain
@@ -175,7 +175,7 @@ export default function AvailabilityPage() {
           </div>
         }>
         {searchParams?.get("type") === "team" ? (
-          <AvailabilitySliderTable theme={theme}/>
+          <AvailabilitySliderTable theme={theme} />
         ) : (
           <WithQuery
             success={({ data }) => <AvailabilityList {...data} />}

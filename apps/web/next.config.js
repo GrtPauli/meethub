@@ -150,6 +150,7 @@ const nextConfig = {
   },
   productionBrowserSourceMaps: true,
   /* We already do type check on GH actions */
+  staticPageGenerationTimeout: 1000,
   typescript: {
     ignoreBuildErrors: !!process.env.CI,
   },

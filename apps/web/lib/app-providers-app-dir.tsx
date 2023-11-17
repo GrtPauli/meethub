@@ -1,4 +1,5 @@
 import { TooltipProvider } from "@radix-ui/react-tooltip";
+import { ThemeContextProvider } from "context/ThemeContext";
 import { dir } from "i18next";
 import type { Session } from "next-auth";
 import { SessionProvider, useSession } from "next-auth/react";
@@ -22,7 +23,6 @@ import type { WithNonceProps } from "@lib/withNonce";
 
 import { useViewerI18n } from "@components/I18nLanguageHandler";
 import type { PageWrapperProps } from "@components/PageWrapperAppDir";
-import { ThemeContextProvider } from "context/ThemeContext";
 import ThemeButton from "@components/ui/ThemeButton";
 
 // Workaround for https://github.com/vercel/next.js/issues/8592
@@ -273,7 +273,7 @@ const AppProviders = (props: PageWrapperProps) => {
                     <ThemeContextProvider>
                       <>
                         {props.children}
-                        <ThemeButton/>
+                        <ThemeButton />
                       </>
                     </ThemeContextProvider>
                   </MetaProvider>

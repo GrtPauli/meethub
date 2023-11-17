@@ -50,7 +50,7 @@ import {
   Label,
   showToast,
   Skeleton,
-  Switch, 
+  Switch,
   Tooltip,
   ArrowButton,
 } from "@calcom/ui";

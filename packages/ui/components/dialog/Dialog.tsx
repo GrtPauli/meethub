@@ -140,9 +140,9 @@ export function DialogHeader(props: DialogHeaderProps) {
 
   return (
     <div className="mb-4">
-      <h3 
+      <h3
         data-testid="dialog-title"
-        className="leading-20 font-black text-emphasis pb-1 text-xl"
+        className="leading-20 text-emphasis pb-1 text-xl font-black"
         id="modal-title">
         {props.title}
       </h3>

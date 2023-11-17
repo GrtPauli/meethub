@@ -28,7 +28,7 @@ export interface SliderUser {
   dateRanges: DateRange[];
 }
 
-function UpgradeTeamTip({theme}: any) {
+function UpgradeTeamTip({ theme }: any) {
   const { t } = useLocale();
 
   // console.log(theme)
@@ -62,7 +62,7 @@ function UpgradeTeamTip({theme}: any) {
   );
 }
 
-export function AvailabilitySliderTable({theme}: any) {
+export function AvailabilitySliderTable({ theme }: any) {
   const { t } = useLocale();
   const tableContainerRef = useRef<HTMLDivElement>(null);
   const [browsingDate, setBrowsingDate] = useState(dayjs());

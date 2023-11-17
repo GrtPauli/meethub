@@ -231,9 +231,9 @@ const BookerComponent = ({
           className={classNames(
             // Sets booker size css variables for the size of all the columns.
             ...getBookerSizeClassNames(layout, bookerState, hideEventTypeDetails),
-            "bg-default grid shadow-xl max-w-full items-start dark:[color-scheme:dark] sm:transition-[width] sm:duration-300 sm:motion-reduce:transition-none md:flex-row",
+            "bg-default grid max-w-full items-start shadow-xl dark:[color-scheme:dark] sm:transition-[width] sm:duration-300 sm:motion-reduce:transition-none md:flex-row",
             // We remove border only when the content covers entire viewport. Because in embed, it can almost never be the case that it covers entire viewport, we show the border there
-            (layout === BookerLayouts.MONTH_VIEW || isEmbed) && "border-subtle rounded-md borde",
+            (layout === BookerLayouts.MONTH_VIEW || isEmbed) && "border-subtle borde rounded-md",
             !isEmbed && "sm:transition-[width] sm:duration-300",
             isEmbed && layout === BookerLayouts.MONTH_VIEW && "border-booker sm:border-booker-width",
             !isEmbed && layout === BookerLayouts.MONTH_VIEW && "border-subtle"

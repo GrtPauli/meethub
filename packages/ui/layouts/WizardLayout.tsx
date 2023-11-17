@@ -13,7 +13,7 @@ export function WizardLayout({
   maxSteps = 2,
   currentStep = 0,
   isOptionalCallback,
-  theme
+  theme,
 }: {
   children: React.ReactNode;
 } & { theme?: any; maxSteps?: number; currentStep?: number; isOptionalCallback?: () => void }) {
@@ -30,25 +30,23 @@ export function WizardLayout({
   }, [pathname]);
 
   return (
-    <div
-      className="bg-muted  min-h-screen"
-      data-testid="onboarding">
+    <div className="bg-muted  min-h-screen" data-testid="onboarding">
       <div>
         <Toaster position="bottom-right" />
       </div>
-      <div className="mx-auto px- py-10">
+      <div className="px- mx-auto py-10">
         <div className="relative">
           <div className="sm:mx-auto sm:w-full sm:max-w-[600px]">
             {theme != null && (
-              <div className="w-full flex items-center justify-center">
-                <Logo theme={theme} small inline={false} className="mx-auto mb-aut" />
+              <div className="flex w-full items-center justify-center">
+                <Logo theme={theme} small inline={false} className="mb-aut mx-auto" />
               </div>
             )}
             <div className="mx-aut sm:max-w-full">
               <header>
                 {isLocaleReady ? (
                   <>
-                    <p className="text-emphasis capitalize text-2xl font-black mb-3">
+                    <p className="text-emphasis mb-3 text-2xl font-black capitalize">
                       {title.replace(` | ${APP_NAME}`, "")}&nbsp;
                     </p>
                     <p className="text-default text-sm">{subtitle}&nbsp;</p>

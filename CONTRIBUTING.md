@@ -13,8 +13,6 @@ Contributions are what makes the open source community such an amazing place to 
     - Issues from non-core members automatically receive the `🚨 needs approval` label.
     - We greatly value new feature ideas. To ensure consistency in the product's direction, they undergo review and approval.
 
-
-
 ## Priorities
 
 <table>
@@ -178,21 +176,25 @@ If you get errors, be sure to fix them before committing.
 Do not commit your `yarn.lock` unless you've made changes to the `package.json`. If you've already committed `yarn.lock` unintentionally, follow these steps to undo:
 
 If your last commit has the `yarn.lock` file alongside other files and you only wish to uncommit the `yarn.lock`:
-   ```bash
-   git checkout HEAD~1 yarn.lock
-   git commit -m "Revert yarn.lock changes"
-   ```
-If you've pushed the commit with the `yarn.lock`:
-   1. Correct the commit locally using the above method.
-   2. Carefully force push:
 
-   ```bash
-   git push origin <your-branch-name> --force
-   ```
+```bash
+git checkout HEAD~1 yarn.lock
+git commit -m "Revert yarn.lock changes"
+```
+
+If you've pushed the commit with the `yarn.lock`:
+
+1.  Correct the commit locally using the above method.
+2.  Carefully force push:
+
+```bash
+git push origin <your-branch-name> --force
+```
 
 If `yarn.lock` was committed a while ago and there have been several commits since, you can use the following steps to revert just the `yarn.lock` changes without impacting the subsequent changes:
 
 1. **Checkout a Previous Version**:
+
    - Find the commit hash before the `yarn.lock` was unintentionally committed. You can do this by viewing the Git log:
      ```bash
      git log yarn.lock
@@ -203,6 +205,7 @@ If `yarn.lock` was committed a while ago and there have been several commits sin
      ```
 
 2. **Commit the Reverted Version**:
+
    - After checking out the previous version of the `yarn.lock`, commit this change:
      ```bash
      git commit -m "Revert yarn.lock to its state before unintended changes"

@@ -57,10 +57,10 @@ export const HOSTED_CAL_FEATURES = process.env.NEXT_PUBLIC_HOSTED_CAL_FEATURES |
 
 /** @deprecated use `WEBAPP_URL` */
 export const NEXT_PUBLIC_BASE_URL = process.env.NEXT_PUBLIC_WEBAPP_URL || `https://${process.env.VERCEL_URL}`;
-export const LOGO = "/meethub/logos/logo-white.png"
-export const LOGO_DARK = "/meethub/logos/logo-black.png"
+export const LOGO = "/meethub/logos/logo-white.png";
+export const LOGO_DARK = "/meethub/logos/logo-black.png";
 // "/calcom-logo-white-word.svg";
-export const LOGO_ICON = "/meethub/logos/icon.png"
+export const LOGO_ICON = "/meethub/logos/icon.png";
 // "/cal-com-icon-white.svg";
 export const AVATAR_FALLBACK = "/avatar.svg";
 export const FAVICON_16 = "/favicon-16x16.png";

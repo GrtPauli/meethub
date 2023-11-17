@@ -1,16 +1,12 @@
-import React from 'react'
-import { TopBanner } from './TopBanner'
-import { Navbar } from './Navbar'
+import React from "react";
 
-interface Props {
-  noBanner?: boolean
-}
+import { Navbar } from "./Navbar";
 
-export const MainHeader: React.FC<Props> = ({ noBanner = false }) => {
+export const MainHeader = () => {
   return (
-    <header className="header fixed w-full shadow-md z-50">
-      {/* {noBanner == false && <TopBanner />} */} 
-      <Navbar /> 
+    <header className="header fixed z-50 w-full shadow-md">
+      {/* {noBanner == false && <TopBanner />} */}
+      <Navbar />
     </header>
-  )
-}
+  );
+};

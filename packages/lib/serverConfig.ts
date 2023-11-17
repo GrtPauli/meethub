@@ -28,7 +28,7 @@ function detectTransport(): SendmailTransport.Options | SMTPConnection.Options |
       },
     };
 
-    console.log(transport)
+    console.log(transport);
 
     return transport;
   }

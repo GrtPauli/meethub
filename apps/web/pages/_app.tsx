@@ -1,17 +1,20 @@
+import { ThemeContextProvider } from "context/ThemeContext";
 import type { IncomingMessage } from "http";
-import type { AppContextType } from "next/dist/shared/lib/utils";
-import React, { useEffect, useState } from "react";
-import { trpc } from "@calcom/trpc/react";
-import type { AppProps } from "@lib/app-providers";
-import "../styles/globals.css";
-import ThemeButton from "@components/ui/ThemeButton";
-import { ThemeContextProvider, useThemeContext } from "context/ThemeContext";
 import { SessionProvider } from "next-auth/react";
+import type { AppContextType } from "next/dist/shared/lib/utils";
+import React from "react";
+
+import { trpc } from "@calcom/trpc/react";
+
+import type { AppProps } from "@lib/app-providers";
+
+import ThemeButton from "@components/ui/ThemeButton";
+
+import "../styles/globals.css";
 
 function MyApp(props: AppProps) {
   // const [currentTheme, setCurrentTheme] = useState<any>(null)
   const { Component, pageProps } = props;
-  const {setTheme, theme, updateTheme} = useThemeContext()
 
   // useEffect(() => {
   //   const appTheme = localStorage.getItem('appTheme')
@@ -34,18 +37,18 @@ function MyApp(props: AppProps) {
   //   console.log(theme)
   // })
 
-  if (Component.PageWrapper !== undefined) return Component.PageWrapper(props)
-  // ( 
+  if (Component.PageWrapper !== undefined) return Component.PageWrapper(props);
+  // (
   //   <ThemeContextProvider>
   //     {Component.PageWrapper(props)}
   //     <ThemeButton/>
   //   </ThemeContextProvider>
   // );
-  return ( 
+  return (
     <SessionProvider>
       <ThemeContextProvider>
         <Component {...pageProps} />
-        <ThemeButton/>
+        <ThemeButton />
       </ThemeContextProvider>
     </SessionProvider>
   );

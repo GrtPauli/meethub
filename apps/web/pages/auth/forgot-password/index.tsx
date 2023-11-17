@@ -127,7 +127,7 @@ export default function ForgotPassword({ csrfToken }: { csrfToken: string }) {
             />
             <div className="space-y-2">
               <Button
-                className="w-full justify-center dark:bg-whit dark:text-blac !mt-5"
+                className="dark:bg-whit dark:text-blac !mt-5 w-full justify-center"
                 type="submit"
                 color="primary"
                 size="lg"

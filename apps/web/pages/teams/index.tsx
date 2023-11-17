@@ -1,3 +1,4 @@
+import { useThemeContext } from "context/ThemeContext";
 import type { GetServerSidePropsContext } from "next";
 
 import { getLayout } from "@calcom/features/MainLayout";
@@ -13,12 +14,11 @@ import { Plus } from "@calcom/ui/components/icon";
 import PageWrapper from "@components/PageWrapper";
 
 import { ssrInit } from "@server/lib/ssr";
-import { useThemeContext } from "context/ThemeContext";
 
 function Teams() {
   const { t } = useLocale();
   const [user] = trpc.viewer.me.useSuspenseQuery();
-  const {theme} = useThemeContext()
+  const { theme } = useThemeContext();
 
   return (
     <ShellMain
@@ -37,7 +37,7 @@ function Teams() {
           </Button>
         )
       }>
-      <TeamsListing theme={theme}/>
+      <TeamsListing theme={theme} />
     </ShellMain>
   );
 }

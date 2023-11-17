@@ -25,6 +25,7 @@ module.exports = {
     "playwright/no-page-pause": "error",
     "react/jsx-curly-brace-presence": ["error", { props: "never", children: "never" }],
     "react/self-closing-comp": ["error", { component: true, html: true }],
+    "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {
@@ -61,12 +62,14 @@ module.exports = {
             disallowTypeAnnotations: false,
           },
         ],
+        "@typescript-eslint/no-explicit-any": "off"
       },
       overrides: [
         {
           files: ["**/playwright/**/*.{tsx,ts}"],
           rules: {
             "@typescript-eslint/no-unused-vars": "off",
+            "@typescript-eslint/no-explicit-any": "off",
             "no-undef": "off",
           },
         },
@@ -76,6 +79,7 @@ module.exports = {
       files: ["**/playwright/**/*.{js,jsx}"],
       rules: {
         "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-explicit-any": "off",
         "no-undef": "off",
       },
     },

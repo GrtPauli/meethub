@@ -11,7 +11,7 @@ import { UpgradeTip } from "../../../tips";
 import SkeletonLoaderTeamList from "./SkeletonloaderTeamList";
 import TeamList from "./TeamList";
 
-export function TeamsListing({theme}: any) {
+export function TeamsListing({ theme }: any) {
   const searchParams = useSearchParams();
   const token = searchParams?.get("token");
   const { t } = useLocale();

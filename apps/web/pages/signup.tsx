@@ -19,13 +19,13 @@ import { collectPageParameters, telemetryEventTypes, useTelemetry } from "@calco
 import { teamMetadataSchema } from "@calcom/prisma/zod-utils";
 import { signupSchema as apiSignupSchema } from "@calcom/prisma/zod-utils";
 import type { inferSSRProps } from "@calcom/types/inferSSRProps";
-import { Alert, Button, EmailField, HeadSeo, PasswordField, TextField } from "@calcom/ui";
+import { Alert, Button, EmailField, PasswordField, TextField } from "@calcom/ui";
 
 import PageWrapper from "@components/PageWrapper";
+import AuthContainer from "@components/ui/AuthContainer";
 
 import { IS_GOOGLE_LOGIN_ENABLED } from "../server/lib/constants";
 import { ssrInit } from "../server/lib/ssr";
-import AuthContainer from "@components/ui/AuthContainer";
 
 const signupSchema = apiSignupSchema.extend({
   apiError: z.string().optional(), // Needed to display API errors doesnt get passed to the API
@@ -131,8 +131,7 @@ export default function Signup({ prepopulateFormValues, token, orgSlug, orgAutoA
           title={t("sign_up")}
           description={t("sign_up")}
           showLogo
-          heading={t("create_your_account")}
-        >
+          heading={t("create_your_account")}>
           <FormProvider {...methods}>
             <form
               onSubmit={(event) => {

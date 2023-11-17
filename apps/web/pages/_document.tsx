@@ -4,7 +4,9 @@ import type { NextPageContext } from "next";
 import type { DocumentContext, DocumentProps } from "next/document";
 import Document, { Head, Html, Main, NextScript } from "next/document";
 import { z } from "zod";
+
 import { IS_PRODUCTION } from "@calcom/lib/constants";
+
 import { csp } from "@lib/csp";
 
 type Props = Record<string, unknown> & DocumentProps & { newLocale: string };
@@ -85,7 +87,7 @@ class MyDocument extends Document<Props> {
         </Head>
 
         <body
-          className="dark:bg-darkgray-50 desktop-transparent bg-subtle antialiased meethub meethub-light"
+          className="dark:bg-darkgray-50 desktop-transparent bg-subtle meethub meethub-light antialiased"
           style={
             isEmbed
               ? {

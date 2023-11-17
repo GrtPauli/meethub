@@ -6,20 +6,20 @@ export default function Logo({
   inline = true,
   className,
   src = "/api/logo",
-  theme
+  theme,
 }: {
   small?: boolean;
   icon?: boolean;
   inline?: boolean;
   className?: string;
   src?: string;
-  theme?: any
+  theme?: any;
 }) {
   return (
     <h3 className={classNames("logo", inline && "inline", className)}>
       <strong>
         {icon ? (
-          <img className="mx-auto w-9 dark:inver" alt="Cal" title="Cal" src={`${src}?type=icon`} />
+          <img className="dark:inver mx-auto w-9" alt="Cal" title="Cal" src={`${src}?type=icon`} />
         ) : (
           <>
             {theme != "dark" ? (
@@ -39,7 +39,7 @@ export default function Logo({
             )}
           </>
         )}
-      </strong> 
+      </strong>
     </h3>
   );
 }

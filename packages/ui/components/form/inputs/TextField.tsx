@@ -45,7 +45,7 @@ const Addon = ({ isFilled, children, className, error, onClickAddon }: AddonProp
     )}>
     <div
       className={classNames(
-        "min-h-[45px] flex flex-col justify-center text-sm leading-7",
+        "flex min-h-[45px] flex-col justify-center text-sm leading-7",
         error ? "text-error" : "text-default"
       )}>
       <span className="flex whitespace-nowrap">{children}</span>

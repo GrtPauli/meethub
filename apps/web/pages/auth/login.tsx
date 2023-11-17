@@ -174,7 +174,7 @@ inferSSRProps<typeof _getServerSideProps> & WithNonceProps<{}>) {
 
   return (
     <div
-      style={ 
+      style={
         {
           "--cal-brand": "#111827",
           "--cal-brand-emphasis": "#101010",
@@ -238,7 +238,7 @@ inferSSRProps<typeof _getServerSideProps> & WithNonceProps<{}>) {
                 color="primary"
                 size="lg"
                 disabled={formState.isSubmitting}
-                className="w-full justify-center dark:bg-whit dark:text-blac !mt-10">
+                className="dark:bg-whit dark:text-blac !mt-10 w-full justify-center">
                 {twoFactorRequired ? t("submit") : t("sign_in")}
               </Button>
             </div>

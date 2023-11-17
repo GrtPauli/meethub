@@ -39,27 +39,26 @@ export const BookerSeo = (props: BookerSeoProps) => {
   const profileImage = event?.profile?.image;
   const title = event?.title ?? "";
   return (
-    <div className="px-10 relative">
-        <HeadSeo
-          title={`${rescheduleUid && !!bookingData ? t("reschedule") : ""} ${title} | ${profileName}`}
-          description={`${rescheduleUid ? t("reschedule") : ""} ${title}`}
-          meeting={{
-            title: title,
-            profile: { name: profileName, image: profileImage },
-            users: [
-              ...(event?.users || []).map((user) => ({
-                name: `${user.name}`,
-                username: `${user.username}`,
-              })),
-            ],
-          }}
-
-          nextSeoProps={{
-            nofollow: event?.hidden || !isSEOIndexable,
-            noindex: event?.hidden || !isSEOIndexable,
-          }}
-          isBrandingHidden={hideBranding}
-        />
+    <div className="relative px-10">
+      <HeadSeo
+        title={`${rescheduleUid && !!bookingData ? t("reschedule") : ""} ${title} | ${profileName}`}
+        description={`${rescheduleUid ? t("reschedule") : ""} ${title}`}
+        meeting={{
+          title: title,
+          profile: { name: profileName, image: profileImage },
+          users: [
+            ...(event?.users || []).map((user) => ({
+              name: `${user.name}`,
+              username: `${user.username}`,
+            })),
+          ],
+        }}
+        nextSeoProps={{
+          nofollow: event?.hidden || !isSEOIndexable,
+          noindex: event?.hidden || !isSEOIndexable,
+        }}
+        isBrandingHidden={hideBranding}
+      />
     </div>
   );
 };
