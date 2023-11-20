@@ -1567,7 +1567,7 @@
   "disable_payment_app": "Administrator je onemogućio {{appName}}, što utiče na vaš tip događaja {{title}}. Učesnici još uvek mogu da zakažu ovaj tip događaja, ali od njih neće biti zatraženo da plate. Možete da sakrijete ovaj tip događaja da biste to sprečili dok vaš administrator ponovo ne omogući vaš način plaćanja.",
   "payment_disabled_still_able_to_book": "Učesnici još uvek mogu da zakažu ovaj tip događaja, ali od njih neće biti zatraženo da plate. Možete da sakrijete ovaj tip događaja da biste to sprečili dok vaš administrator ponovo ne omogući vaš način plaćanja.",
   "app_disabled_with_event_type": "Administrator je onemogućio {{appName}}, što utiče na vaš tip događaja {{title}}.",
-  "app_disabled_video": "Administrator je onemogućio {{appName}}, što može da utiče na vaš tip događaja. Ako imate tipove događaja sa {{appName}} kao lokacijom, onda će oni biti podrazumevano usmereni na Cal Video.",
+  "app_disabled_video": "Administrator je onemogućio {{appName}}, što može da utiče na vaš tip događaja. Ako imate tipove događaja sa {{appName}} kao lokacijom, onda će oni biti podrazumevano usmereni na MeetHub Video.",
   "app_disabled_subject": "Aplikacija {{appName}} je onemogućena",
   "navigate_installed_apps": "Idi na instalirane aplikacije",
   "disabled_calendar": "Ako imate instaliran drugi kalendar, nova zakazivanja će biti dodata na njega. Ako nemate, onda povežite novi kalendar da ne biste propustili nova zakazivanja.",

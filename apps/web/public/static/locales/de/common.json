@@ -1572,7 +1572,7 @@
   "disable_payment_app": "Der Admin hat {{appName}} deaktiviert, wodurch Ihr Termintyp {{title}} beeinflusst wurde. Die Teilnehmer können diesen Termintyp immer noch buchen, werden aber nicht zur Zahlung aufgefordert. Sie können den Termintyp ausblenden, um dies zu verhindern, bis Ihr Administrator Ihre Zahlungsmethode wieder aktiviert.",
   "payment_disabled_still_able_to_book": "Die Teilnehmer können diesen Termintyp immer noch buchen, werden aber nicht zur Zahlung aufgefordert. Sie können den Termintyp ausblenden, um dies zu verhindern, bis Ihr Administrator Ihre Zahlungsmethode wieder aktiviert.",
   "app_disabled_with_event_type": "Der Admin hat {{appName}} deaktiviert, was Ihren Termintyp {{title}} beeinflusst.",
-  "app_disabled_video": "Der Administrator hat {{appName}} deaktiviert, was Ihre Termintypen beeinflussen kann. Wenn Sie Termintypen mit {{appName}} als Ort haben, wird standardmäßig Cal Video gewählt.",
+  "app_disabled_video": "Der Administrator hat {{appName}} deaktiviert, was Ihre Termintypen beeinflussen kann. Wenn Sie Termintypen mit {{appName}} als Ort haben, wird standardmäßig MeetHub Video gewählt.",
   "app_disabled_subject": "{{appName}} wurde deaktiviert",
   "navigate_installed_apps": "Zu installierten Apps wechseln",
   "disabled_calendar": "Wenn Sie einen anderen Kalender installiert haben, werden neue Buchungen zu dem Kalender hinzugefügt. Verbinden Sie andernfalls einen neuen Kalender, damit Sie keine neuen Buchungen verpassen.",

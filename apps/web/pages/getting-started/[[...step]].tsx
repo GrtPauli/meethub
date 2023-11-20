@@ -122,23 +122,24 @@ const OnboardingPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="mx-auto py-6 sm:px-4 md:py-24">
+      <div className="mx-auto py-6 sm:px-4 md:py-10">
         <div className="relative">
-          <div className="sm:mx-auto sm:w-full sm:max-w-[600px]">
-            <div className="mx-auto px-4 sm:max-w-[520px]">
+          <div className="sm:mx-auto sm:w-full sm:max-w-[700px]">
+            <div className="mx-aut sm:max-w-full">
               <header>
-                <p className="font-cal mb-3 text-[28px] font-medium leading-7">
+                <p className="text-emphasis mb-3 text-2xl font-black capitalize">
                   {headers[currentStepIndex]?.title || "Undefined title"}
                 </p>
 
                 {headers[currentStepIndex]?.subtitle.map((subtitle, index) => (
-                  <p className="text-subtle font-sans text-sm font-normal" key={index}>
+                  <p className="text-default text-sm" key={index}>
                     {subtitle}
                   </p>
                 ))}
               </header>
               <Steps maxSteps={steps.length} currentStep={currentStepIndex + 1} navigateToStep={goToIndex} />
             </div>
+
             <StepCard>
               <Suspense fallback={<Loader />}>
                 {currentStep === "user-settings" && (
@@ -163,6 +164,7 @@ const OnboardingPage = () => {
                 <Button
                   color="minimal"
                   data-testid="skip-step"
+                  size="lg"
                   onClick={(event) => {
                     event.preventDefault();
                     goToIndex(currentStepIndex + 1);

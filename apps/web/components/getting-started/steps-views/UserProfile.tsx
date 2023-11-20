@@ -156,9 +156,7 @@ const UserProfile = () => {
           {t("few_sentences_about_yourself")}
         </p>
       </fieldset>
-      <Button
-        type="submit"
-        className="text-inverted mt-8 flex w-full flex-row justify-center rounded-md border border-black bg-black p-2 text-center text-sm">
+      <Button type="submit" size="lg" className="mt-2 w-full justify-center p-2 text-sm sm:mt-8">
         {t("finish")}
         <ArrowRight className="ml-2 h-4 w-4 self-center" aria-hidden="true" />
       </Button>

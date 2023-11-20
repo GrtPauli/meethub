@@ -1567,7 +1567,7 @@
   "disable_payment_app": "관리자가 이벤트 타입 {{title}}에 영향을 미치는 {{appName}} 앱을 비활성화했습니다. 참석자는 여전히 이러한 타입의 이벤트를 예약할 수 있지만 결제하라는 메시지는 표시되지 않습니다. 관리자가 결제 수단을 다시 활성화할 때까지 이를 방지하기 위해 이벤트 타입을 숨길 수 있습니다.",
   "payment_disabled_still_able_to_book": "참석자는 여전히 이러한 타입의 이벤트를 예약할 수 있지만 결제하라는 메시지는 표시되지 않습니다. 관리자가 결제 수단을 다시 활성화할 때까지 이를 방지하기 위해 이벤트 타입을 숨길 수 있습니다.",
   "app_disabled_with_event_type": "관리자가 이벤트 타입 {{title}}에 영향을 미치는 {{appName}} 앱을 비활성화했습니다.",
-  "app_disabled_video": "관리자가 이벤트 타입에 영향을 미칠 수 있는 {{appName}} 앱을 비활성화했습니다. 위치가 {{appName}}인 이벤트 타입이 있는 경우 기본적으로 Cal Video로 설정됩니다.",
+  "app_disabled_video": "관리자가 이벤트 타입에 영향을 미칠 수 있는 {{appName}} 앱을 비활성화했습니다. 위치가 {{appName}}인 이벤트 타입이 있는 경우 기본적으로 MeetHub Video로 설정됩니다.",
   "app_disabled_subject": "{{appName}} 앱이 비활성화되었습니다",
   "navigate_installed_apps": "설치된 앱으로 이동",
   "disabled_calendar": "다른 캘린더를 설치한 경우 새 예약이 여기에 추가됩니다. 그렇지 않은 경우 새로운 예약을 놓치지 않도록 새 캘린더를 연결하세요.",

@@ -1567,7 +1567,7 @@
   "disable_payment_app": "Yönetici, {{title}} etkinlik türünüzü etkileyebilecek {{appName}} uygulamasını devre dışı bıraktı. Katılımcılar yine de bu tür bir etkinlik için rezervasyon yaptırabilirler ancak herhangi bir ödeme yapmalarına gerek yoktur. Bu durumu önlemek için yöneticiniz ödeme yönteminizi yeniden etkinleştirene kadar etkinlik türünü gizleyebilirsiniz.",
   "payment_disabled_still_able_to_book": "Katılımcılar yine de bu tür bir etkinlik için rezervasyon yaptırabilirler, ancak herhangi bir ödeme yapmalarına gerek yoktur. Bu durumu önlemek için yöneticiniz ödeme yönteminizi yeniden etkinleştirene kadar etkinlik türünü gizleyebilirsiniz.",
   "app_disabled_with_event_type": "Yönetici, etkinlik {{title}} türünüzü etkileyen {{appName}} uygulamasını devre dışı bıraktı.",
-  "app_disabled_video": "Yönetici, etkinlik türlerinizi etkileyebilecek {{appName}} uygulamasını devre dışı bıraktı. Konum olarak {{appName}} olan etkinlik türleriniz varsa varsayılan uygulama Cal Video olacaktır.",
+  "app_disabled_video": "Yönetici, etkinlik türlerinizi etkileyebilecek {{appName}} uygulamasını devre dışı bıraktı. Konum olarak {{appName}} olan etkinlik türleriniz varsa varsayılan uygulama MeetHub Video olacaktır.",
   "app_disabled_subject": "{{appName}} devre dışı bırakıldı",
   "navigate_installed_apps": "Yüklü uygulamalara git",
   "disabled_calendar": "Yüklü başka bir takviminiz varsa yeni randevular bu takvime eklenir. Aksi takdirde yeni bir takvim bağlamazsanız yeni rezervasyonları kaçırabilirsiniz.",

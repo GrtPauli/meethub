@@ -1567,7 +1567,7 @@
   "disable_payment_app": "Administratören har inaktiverat {{appName}} vilket påverkar din händelsetyp {{title}}. Deltagarna kan fortfarande boka den här händelsetypen, men de uppmanas inte att betala. Du kan dölja händelsetypen för att förhindra detta tills din administratör återaktiverar betalningsmetoden.",
   "payment_disabled_still_able_to_book": "Deltagarna kan fortfarande boka den här händelsetypen, men de uppmanas inte att betala. Du kan dölja händelsetypen för att förhindra detta tills din administratör återaktiverar betalningsmetoden.",
   "app_disabled_with_event_type": "Administratören har inaktiverat {{appName}} vilket påverkar din händelsetyp {{title}}.",
-  "app_disabled_video": "Administratören har inaktiverat {{appName}} vilket kan påverka dina händelsetyper. Om du har händelsetyper med {{appName}} som plats, används Cal Video som standard.",
+  "app_disabled_video": "Administratören har inaktiverat {{appName}} vilket kan påverka dina händelsetyper. Om du har händelsetyper med {{appName}} som plats, används MeetHub Video som standard.",
   "app_disabled_subject": "{{appName}} har inaktiverats",
   "navigate_installed_apps": "Gå till installerade appar",
   "disabled_calendar": "Om du har en annan kalender installerad läggs nya bokningar till i den. Anslut annars en ny kalender så att du inte missar nya bokningar.",

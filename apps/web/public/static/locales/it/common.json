@@ -1567,7 +1567,7 @@
   "disable_payment_app": "L'amministratore ha disabilitato {{appName}}, il che ha effetto sul tuo tipo di evento {{title}}. I partecipanti sono ancora in grado di prenotare questo tipo di evento ma non gli verrà richiesto di pagare. Per evitarlo, è possibile nascondere questo tipo di evento fino a che l'amministratore non riattivi il tuo metodo di pagamento.",
   "payment_disabled_still_able_to_book": "I partecipanti sono ancora in grado di prenotare questo tipo di evento ma non gli verrà richiesto di pagare. Per evitarlo, è possibile nascondere questo tipo di evento fino a che l'amministratore non riattivi il tuo metodo di pagamento.",
   "app_disabled_with_event_type": "L'amministratore ha disabilitato {{appName}}, il che ha effetto sul tuo tipo di evento {{title}}.",
-  "app_disabled_video": "L'amministratore ha disabilitato {{appName}}, il che potrebbe avere effetto sui tuoi tipi di eventi. Se hai dei tipi di eventi che utilizzano {{appName}} come luogo, allora verrà usato Cal Video come luogo predefinito.",
+  "app_disabled_video": "L'amministratore ha disabilitato {{appName}}, il che potrebbe avere effetto sui tuoi tipi di eventi. Se hai dei tipi di eventi che utilizzano {{appName}} come luogo, allora verrà usato MeetHub Video come luogo predefinito.",
   "app_disabled_subject": "{{appName}} è stato disabilitato",
   "navigate_installed_apps": "Vai alle app installate",
   "disabled_calendar": "Se hai un altro calendario installato, le nuove prenotazioni saranno aggiunte a quel calendario. Altrimenti, collega un nuovo calendario in modo da non perdere nessuna nuova prenotazione.",

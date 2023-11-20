@@ -1368,7 +1368,7 @@
   "disable_payment_app": "Administratoren har deaktiveret {{appName}}, hvilket påvirker din begivenhedstype {{title}}. Deltagere er stadig i stand til at booke denne type begivenhed, men vil ikke blive bedt om at betale. Du kan skjule begivenhedstypen for at forhindre dette, indtil din administrator genaktiverer din betalingsmetode.",
   "payment_disabled_still_able_to_book": "Deltagere kan stadig booke denne type begivenhed, men vil ikke blive bedt om at betale. Du kan skjule begivenhedstypen for at forhindre dette, indtil din administrator genaktiverer din betalingsmetode.",
   "app_disabled_with_event_type": "Administratoren har deaktiveret {{appName}}, hvilket påvirker din begivenhedstype {{title}}.",
-  "app_disabled_video": "Administratoren har deaktiveret {{appName}}, hvilket kan påvirke dine begivenhedstyper. Hvis du har begivenhedstyper med {{appName}} som placering, vil den som standard gå til Cal Video.",
+  "app_disabled_video": "Administratoren har deaktiveret {{appName}}, hvilket kan påvirke dine begivenhedstyper. Hvis du har begivenhedstyper med {{appName}} som placering, vil den som standard gå til MeetHub Video.",
   "app_disabled_subject": "{{appName}} er blevet deaktiveret",
   "navigate_installed_apps": "Gå til installerede apps",
   "disabled_calendar": "Hvis du har en anden kalender installeret vil nye bookinger blive tilføjet til den. Hvis ikke, så forbind en ny kalender, så du ikke går glip af nye bookinger.",

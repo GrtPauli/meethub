@@ -1,7 +1,8 @@
-import classNames from "@calcom/lib/classNames";
+// import classNames from "@calcom/lib/classNames";
 import { useLocale } from "@calcom/lib/hooks/useLocale";
 import { trpc } from "@calcom/trpc/react";
 import { List } from "@calcom/ui";
+import { Button } from "@calcom/ui";
 import { ArrowRight } from "@calcom/ui/components/icon";
 
 import { AppConnectionItem } from "../components/AppConnectionItem";
@@ -78,7 +79,17 @@ const ConnectedCalendars = (props: IConnectCalendarsProps) => {
 
       {queryIntegrations.isLoading && <StepConnectionLoader />}
 
-      <button
+      <Button
+        type="button"
+        onClick={() => nextStep()}
+        size="lg"
+        className="mt-8 flex w-full flex-row justify-center"
+        disabled={disabledNextButton}>
+        {firstCalendar ? `${t("continue")}` : `${t("next_step_text")}`}
+        <ArrowRight className="ml-2 h-4 w-4 self-center" aria-hidden="true" />
+      </Button>
+
+      {/* <button
         type="button"
         data-testid="save-calendar-button"
         className={classNames(
@@ -89,7 +100,7 @@ const ConnectedCalendars = (props: IConnectCalendarsProps) => {
         disabled={disabledNextButton}>
         {firstCalendar ? `${t("continue")}` : `${t("next_step_text")}`}
         <ArrowRight className="ml-2 h-4 w-4 self-center" aria-hidden="true" />
-      </button>
+      </button> */}
     </>
   );
 };

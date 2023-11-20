@@ -674,7 +674,7 @@ describe("handleNewBooking", () => {
       });
 
       test(
-        `When Cal Video is the location, it uses global instance credentials and createMeeting is called for it`,
+        `When MeetHub Video is the location, it uses global instance credentials and createMeeting is called for it`,
         async ({ emails }) => {
           const handleNewBooking = (await import("@calcom/features/bookings/lib/handleNewBooking")).default;
           const booker = getBooker({

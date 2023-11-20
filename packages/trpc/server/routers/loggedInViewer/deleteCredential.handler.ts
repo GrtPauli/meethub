@@ -73,7 +73,7 @@ export const deleteCredentialHandler = async ({ ctx, input }: DeleteCredentialOp
   // TODO: Improve this uninstallation cleanup per event by keeping a relation of EventType to App which has the data.
   for (const eventType of eventTypes) {
     if (eventType.locations) {
-      // If it's a video, replace the location with Cal video
+      // If it's a video, replace the location with MeetHub Video
       if (
         credential.app?.categories.includes(AppCategories.video) ||
         credential.app?.categories.includes(AppCategories.conferencing)

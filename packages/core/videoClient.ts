@@ -211,7 +211,7 @@ const getRecordingsOfCalVideoByRoomName = async (
   try {
     dailyAppKeys = await getDailyAppKeys();
   } catch (e) {
-    console.error("Error: Cal video provider is not installed.");
+    console.error("Error: MeetHub Video provider is not installed.");
     return;
   }
   const [videoAdapter] = await getVideoAdapters([
@@ -234,7 +234,7 @@ const getDownloadLinkOfCalVideoByRecordingId = async (recordingId: string) => {
   try {
     dailyAppKeys = await getDailyAppKeys();
   } catch (e) {
-    console.error("Error: Cal video provider is not installed.");
+    console.error("Error: MeetHub Video provider is not installed.");
     return;
   }
   const [videoAdapter] = await getVideoAdapters([

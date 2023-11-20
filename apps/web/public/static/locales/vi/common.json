@@ -1578,7 +1578,7 @@
   "disable_payment_app": "Một quản trị viên đã tắt {{appName}} vốn có ảnh hưởng đến loại sự kiện {{title}}. Người tham dự vẫn có thể đặt hẹn cho loại sự kiện này nhưng sẽ được nhắc trả phí. Bạn có thể ẩn loại sự kiện này để tránh điều này cho đến khi quản trị viên kích hoạt lại phương thức thanh toán của bạn.",
   "payment_disabled_still_able_to_book": "Người tham dự vẫn có thể đặt hẹn cho loại sự kiện này nhưng sẽ được nhắc trả phí. Bạn có thể ẩn loại sự kiện này để tránh điều này cho đến khi quản trị viên kích hoạt lại phương thức thanh toán của bạn.",
   "app_disabled_with_event_type": "Quản trị viên đã tắt {{appName}} vốn có ảnh hưởng đến loại sự kiện {{title}}.",
-  "app_disabled_video": "Quản trị viên đã tắt {{appName}} vốn có ảnh hưởng đến những loại sự kiện của bạn. Nếu bạn có những loại sự kiện với {{appName}} ở dạng vị trí thì nó sẽ mặc định gắn với Cal Video.",
+  "app_disabled_video": "Quản trị viên đã tắt {{appName}} vốn có ảnh hưởng đến những loại sự kiện của bạn. Nếu bạn có những loại sự kiện với {{appName}} ở dạng vị trí thì nó sẽ mặc định gắn với MeetHub Video.",
   "app_disabled_subject": "{{appName}} đã được tắt",
   "navigate_installed_apps": "Đến những ứng dụng được cài đặt",
   "disabled_calendar": "Nếu bạn có lịch khác được cài đặt, những mục đặt hẹn mới sẽ được thêm vào đó. Nếu không thì hãy kết nối với lịch mới để bạn không bỏ lỡ bất cứ mục đặt hẹn mới nào.",

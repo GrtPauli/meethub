@@ -1568,7 +1568,7 @@
   "disable_payment_app": "管理员已禁用会影响活动类型 {{title}} 的 {{appName}}。参与者仍然能预约此类型的活动，但不会被提示付款。您可以隐藏该活动类型来防止出现这种情况，直到管理员重新启用您的支付方式。",
   "payment_disabled_still_able_to_book": "参与者仍然能预约此类型的活动，但不会被提示付款。您可以隐藏该活动类型来防止出现这种情况，直到管理员重新启用您的支付方式。",
   "app_disabled_with_event_type": "管理员已禁用会影响活动类型 {{title}} 的 {{appName}}。",
-  "app_disabled_video": "管理员已禁用可能会影响您的活动类型的 {{appName}}。如果您有将 {{appName}} 作为位置的活动类型，则默认为 Cal Video。",
+  "app_disabled_video": "管理员已禁用可能会影响您的活动类型的 {{appName}}。如果您有将 {{appName}} 作为位置的活动类型，则默认为 MeetHub Video。",
   "app_disabled_subject": "{{appName}} 已被禁用",
   "navigate_installed_apps": "转到已安装的应用",
   "disabled_calendar": "如果您安装了其他日历，新预约将添加至其中。如果没有，则连接一个新日历，这样就不会错过任何新预约。",

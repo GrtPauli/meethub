@@ -50,7 +50,7 @@ describe("handleNewBooking", () => {
 
   describe("Reschedule", () => {
     test(
-      `should rechedule an existing booking successfully with Cal Video(Daily Video)
+      `should rechedule an existing booking successfully with MeetHub Video(Daily Video)
           1. Should cancel the existing booking
           2. Should create a new booking in the database
           3. Should send emails to the booker as well as organizer

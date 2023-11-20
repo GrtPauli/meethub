@@ -1,7 +1,8 @@
-import classNames from "@calcom/lib/classNames";
+// import classNames from "@calcom/lib/classNames";
 import { useLocale } from "@calcom/lib/hooks/useLocale";
 import { trpc } from "@calcom/trpc/react";
 import { List } from "@calcom/ui";
+import { Button } from "@calcom/ui";
 import { ArrowRight } from "@calcom/ui/components/icon";
 
 import { AppConnectionItem } from "../components/AppConnectionItem";
@@ -27,7 +28,7 @@ const ConnectedVideoStep = (props: ConnectedAppStepProps) => {
   return (
     <>
       {!isLoading && (
-        <List className="bg-default  border-subtle divide-subtle scroll-bar mx-1 max-h-[45vh] divide-y !overflow-y-scroll rounded-md border p-0 sm:mx-0">
+        <List className="bg-default  border-subtle divide-subtle scroll-bar mx-1 max-h-[80vh] divide-y !overflow-y-scroll rounded-md border p-0 sm:mx-0">
           {queryConnectedVideoApps?.items &&
             queryConnectedVideoApps?.items.map((item) => {
               if (item.slug === "daily-video") return null; // we dont want to show daily here as it is installed by default
@@ -49,7 +50,18 @@ const ConnectedVideoStep = (props: ConnectedAppStepProps) => {
       )}
 
       {isLoading && <StepConnectionLoader />}
-      <button
+
+      <Button
+        type="button"
+        onClick={() => nextStep()}
+        size="lg"
+        className="mt-8 flex w-full flex-row justify-center"
+        disabled={!hasAnyInstalledVideoApps}>
+        {t("next_step_text")}
+        <ArrowRight className="ml-2 h-4 w-4 self-center" aria-hidden="true" />
+      </Button>
+
+      {/* <button
         type="button"
         data-testid="save-video-button"
         className={classNames(
@@ -60,7 +72,7 @@ const ConnectedVideoStep = (props: ConnectedAppStepProps) => {
         onClick={() => nextStep()}>
         {t("next_step_text")}
         <ArrowRight className="ml-2 h-4 w-4 self-center" aria-hidden="true" />
-      </button>
+      </button> */}
     </>
   );
 };

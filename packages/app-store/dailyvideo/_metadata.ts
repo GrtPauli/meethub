@@ -3,7 +3,7 @@ import type { AppMeta } from "@calcom/types/App";
 import _package from "./package.json";
 
 export const metadata = {
-  name: "Cal Video",
+  name: "MeetHub Video",
   description: _package.description,
   installed: !!process.env.DAILY_API_KEY,
   type: "daily_video",
@@ -14,14 +14,14 @@ export const metadata = {
   publisher: "Cal.com",
   category: "conferencing",
   slug: "daily-video",
-  title: "Cal Video",
+  title: "MeetHub Video",
   isGlobal: true,
   email: "help@cal.com",
   appData: {
     location: {
       linkType: "dynamic",
       type: "integrations:daily",
-      label: "Cal Video",
+      label: "MeetHub Video",
     },
   },
   key: { apikey: process.env.DAILY_API_KEY },

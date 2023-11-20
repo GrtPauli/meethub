@@ -1567,7 +1567,7 @@
   "disable_payment_app": "Administratorul a dezactivat {{appName}} care afectează tipul tău de eveniment {{title}}. Participanții încă pot să facă rezervări pentru acest tip de eveniment, dar nu li se va solicita să plătească. Poți ascunde tipul de eveniment pentru a preveni acest lucru până când administratorul tău reactivează metoda ta de plată.",
   "payment_disabled_still_able_to_book": "Participanții încă pot să facă rezervări pentru acest tip de eveniment, dar nu li se va solicita să plătească. Poți ascunde tipul de eveniment pentru a preveni acest lucru până când administratorul tău reactivează metoda ta de plată.",
   "app_disabled_with_event_type": "Administratorul a dezactivat {{appName}} care afectează tipul tău de eveniment {{title}}.",
-  "app_disabled_video": "Administratorul a dezactivat {{appName}} care poate afecta tipurile tale de evenimente. Dacă ai tipuri de evenimente cu {{appName}} ca locație, atunci setarea implicită va fi Cal Video.",
+  "app_disabled_video": "Administratorul a dezactivat {{appName}} care poate afecta tipurile tale de evenimente. Dacă ai tipuri de evenimente cu {{appName}} ca locație, atunci setarea implicită va fi MeetHub Video.",
   "app_disabled_subject": "{{appName}} a fost dezactivat",
   "navigate_installed_apps": "Mergi la aplicațiile instalate",
   "disabled_calendar": "Dacă ai un alt calendar instalat, rezervările noi vor fi adăugate la acesta. Dacă nu ai, conectează un calendar nou, astfel încât să nu ratezi nicio rezervare nouă.",

@@ -66,7 +66,7 @@ describe("handleNewBooking", () => {
 
   describe("Fresh/New Booking:", () => {
     testWithAndWithoutOrg(
-      `should create a successful booking with Cal Video(Daily Video) if no explicit location is provided
+      `should create a successful booking with MeetHub Video(Daily Video) if no explicit location is provided
           1. Should create a booking in the database
           2. Should send emails to the booker as well as organizer
           3. Should create a booking in the event's destination calendar
@@ -1598,7 +1598,7 @@ describe("handleNewBooking", () => {
 
     // FIXME: We shouldn't throw error here, the behaviour should be fixed.
     test(
-      `if booking with Cal Video(Daily Video) fails, booking creation fails with uncaught error`,
+      `if booking with MeetHub Video(Daily Video) fails, booking creation fails with uncaught error`,
       async ({}) => {
         const handleNewBooking = (await import("@calcom/features/bookings/lib/handleNewBooking")).default;
         const booker = getBooker({

@@ -1567,7 +1567,7 @@
   "disable_payment_app": "De beheerder heeft {{appName}} uitgeschakeld die van invloed is op uw gebeurtenistype {{title}}. Deelnemers kunnen dit tyoe gebeurtenissen nog steeds boeken, maar worden niet gevraagd te betalen. U kunt het gebeurtenistype verbergen om dit te voorkomen totdat uw beheerde de betaalmethode opnieuw inschakelt.",
   "payment_disabled_still_able_to_book": "Deelnemers kunnen dit type gebeurtenis nog steeds boeken, maar worden niet gevraagd te betalen. U kunt het gebeurtenistype verbergen om dit te voorkomen totdat uw beheerde de betaalmethode opnieuw inschakelt.",
   "app_disabled_with_event_type": "De beheerder heeft {{appName}} uitgeschakeld die van invloed is op uw gebeurtenistype {{title}}.",
-  "app_disabled_video": "De beheerder heeft {{appName}} uitgeschakeld, wat van invloed kan zijn op uw gebeurtenistypes. Als u gebeurtenistypes heeft met {{appName}} als locatie, is het standaard Cal Video.",
+  "app_disabled_video": "De beheerder heeft {{appName}} uitgeschakeld, wat van invloed kan zijn op uw gebeurtenistypes. Als u gebeurtenistypes heeft met {{appName}} als locatie, is het standaard MeetHub Video.",
   "app_disabled_subject": "{{appName}} is uitgeschakeld",
   "navigate_installed_apps": "Naar geïnstalleerde apps",
   "disabled_calendar": "Als u een andere agenda heeft geïnstalleerd, worden nieuwe boekingen daaraan toegevoegd. Zo niet, koppel dan een nieuwe agenda zodat u geen nieuwe boekingen mist.",

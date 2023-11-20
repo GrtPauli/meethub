@@ -115,9 +115,9 @@ export default class EventManager {
    */
   public async create(event: CalendarEvent): Promise<CreateUpdateResult> {
     const evt = processLocation(event);
-    // Fallback to cal video if no location is set
+    // Fallback to MeetHub Video if no location is set
     if (!evt.location) {
-      // See if cal video is enabled & has keys
+      // See if MeetHub Video is enabled & has keys
       const calVideo = await prisma.app.findFirst({
         where: {
           slug: "daily-video",
@@ -133,12 +133,12 @@ export default class EventManager {
       if (calVideo?.enabled && calVideoKeys.success) evt["location"] = "integrations:daily";
     }
 
-    // Fallback to Cal Video if Google Meet is selected w/o a Google Cal
+    // Fallback to MeetHub Video if Google Meet is selected w/o a Google Cal
     // @NOTE: destinationCalendar it's an array now so as a fallback we will only check the first one
     const [mainHostDestinationCalendar] =
       (evt.destinationCalendar as [undefined | NonNullable<typeof evt.destinationCalendar>[number]]) ?? [];
     if (evt.location === MeetLocationType && mainHostDestinationCalendar?.integration !== "google_calendar") {
-      log.warn("Falling back to Cal Video integration as Google Calendar not installed");
+      log.warn("Falling back to MeetHub Video integration as Google Calendar not installed");
       evt["location"] = "integrations:daily";
     }
     const isDedicated = evt.location ? isDedicatedIntegration(evt.location) : null;
@@ -631,7 +631,7 @@ export default class EventManager {
     }
 
     /**
-     * This might happen if someone tries to use a location with a missing credential, so we fallback to Cal Video.
+     * This might happen if someone tries to use a location with a missing credential, so we fallback to MeetHub Video.
      * @todo remove location from event types that has missing credentials
      * */
     if (!videoCredential) {

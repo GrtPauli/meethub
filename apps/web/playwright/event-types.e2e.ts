@@ -187,11 +187,11 @@ test.describe("Event Types tests", () => {
         await expect(page.locator("text=+19199999999")).toBeVisible();
       });
 
-      test("Can add Cal video location and book with it", async ({ page }) => {
+      test("Can add MeetHub Video location and book with it", async ({ page }) => {
         await gotoFirstEventType(page);
 
         await page.locator("#location-select").click();
-        await page.locator(`text="Cal Video (Global)"`).click();
+        await page.locator(`text="MeetHub Video (Global)"`).click();
 
         await saveEventType(page);
         await page.getByTestId("toast-success").waitFor();
@@ -201,7 +201,7 @@ test.describe("Event Types tests", () => {
         await bookTimeSlot(page);
 
         await expect(page.locator("[data-testid=success-page]")).toBeVisible();
-        await expect(page.locator("[data-testid=where] ")).toContainText("Cal Video");
+        await expect(page.locator("[data-testid=where] ")).toContainText("MeetHub Video");
       });
 
       test("Can add Link Meeting as location and book with it", async ({ page }) => {
@@ -233,8 +233,8 @@ test.describe("Event Types tests", () => {
         // Add Attendee Phone Number location
         await selectAttendeePhoneNumber(page);
 
-        // Add Cal Video location
-        await addAnotherLocation(page, "Cal Video (Global)");
+        // Add MeetHub Video location
+        await addAnotherLocation(page, "MeetHub Video (Global)");
 
         await saveEventType(page);
         await page.waitForLoadState("networkidle");
@@ -252,7 +252,7 @@ test.describe("Event Types tests", () => {
         await bookTimeSlot(page);
 
         await expect(page.locator("[data-testid=success-page]")).toBeVisible();
-        await expect(page.locator("[data-testid=where]")).toHaveText(/Cal Video/);
+        await expect(page.locator("[data-testid=where]")).toHaveText(/MeetHub Video/);
       });
     });
   });

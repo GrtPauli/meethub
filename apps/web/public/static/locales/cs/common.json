@@ -1567,7 +1567,7 @@
   "disable_payment_app": "Administrátor zakázal {{appName}}, což ovlivňuje váš typ události {{title}}. Účastníci si stále mohou rezervovat tento typ události, ale nebudou vyzváni k platbě. Abyste tomu zabránili, můžete tento typ události skrýt, dokud správce tento způsob platby znovu nepovolí.",
   "payment_disabled_still_able_to_book": "Účastníci si stále mohou rezervovat tento typ události, ale nebudou vyzváni k platbě. Abyste tomu zabránili, můžete tento typ události skrýt, dokud správce tento způsob platby znovu nepovolí.",
   "app_disabled_with_event_type": "Administrátor zakázal {{appName}}, což ovlivňuje váš typ události {{title}}.",
-  "app_disabled_video": "Administrátor zakázal {{appName}}, což může ovlivnit vaše typy událostí. Pokud máte typy událostí s {{appName}} jako umístění, bude výchozí nastavení Cal Video.",
+  "app_disabled_video": "Administrátor zakázal {{appName}}, což může ovlivnit vaše typy událostí. Pokud máte typy událostí s {{appName}} jako umístění, bude výchozí nastavení MeetHub Video.",
   "app_disabled_subject": "Aplikace {{appName}} byla zakázána",
   "navigate_installed_apps": "Přejděte na nainstalované aplikace",
   "disabled_calendar": "Pokud máte nainstalovaný jiný kalendář, budou do něj přidány nové rezervace. Pokud ne, připojte nový kalendář, abyste nepřišli o žádné nové rezervace.",

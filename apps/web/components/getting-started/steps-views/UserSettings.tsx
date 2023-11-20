@@ -85,7 +85,7 @@ const UserSettings = (props: IUserSettingsProps) => {
             type="text"
             autoComplete="off"
             autoCorrect="off"
-            className="border-default w-full rounded-md border text-sm"
+            className="hover:border-emphasis dark:focus:border-emphasis border-default bg-default placeholder:text-muted text-emphasis disabled:hover:border-default disabled:bg-subtle focus:ring-brand-default mb-2 block h-[45px] w-full rounded-md border px-3 py-2 text-sm leading-4 focus:border-neutral-300 focus:outline-none focus:ring-2 disabled:cursor-not-allowed"
           />
           {errors.name && (
             <p data-testid="required" className="py-2 text-xs text-red-500">
@@ -113,6 +113,7 @@ const UserSettings = (props: IUserSettingsProps) => {
       </div>
       <Button
         type="submit"
+        size="lg"
         className="mt-8 flex w-full flex-row justify-center"
         disabled={mutation.isLoading}>
         {t("next_step_text")}

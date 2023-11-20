@@ -1567,7 +1567,7 @@
   "disable_payment_app": "管理員已停用會影響 {{title}} 活動類型的 {{appName}}。與會者仍可預約此類型活動，但不會收到付費提示。您也可以隱藏此活動類型來避免這種情況，直到管理員再次啟用您的付款方式為止。",
   "payment_disabled_still_able_to_book": "與會者仍可預約此類型活動，但不會收到付費提示。您也可以隱藏此活動類型來避免這種情況，直到管理員再次啟用您的付款方式。",
   "app_disabled_with_event_type": "管理員已停用會影響 {{title}} 活動類型的 {{appName}}。",
-  "app_disabled_video": "管理員已停用可能會影響您的活動類型的 {{appName}}。如果您有活動類型將 {{appName}} 設為地點，系統就會將地點預設為 Cal Video。",
+  "app_disabled_video": "管理員已停用可能會影響您的活動類型的 {{appName}}。如果您有活動類型將 {{appName}} 設為地點，系統就會將地點預設為 MeetHub Video。",
   "app_disabled_subject": "已停用 {{appName}}",
   "navigate_installed_apps": "前往已安裝的應用程式",
   "disabled_calendar": "如果您安裝了其他行事曆，新的預約就會新增到該行事曆中。如果沒有，請連至新行事曆，這樣才不會錯過任何新的預約。",

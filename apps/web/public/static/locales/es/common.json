@@ -1567,7 +1567,7 @@
   "disable_payment_app": "El administrador ha deshabilitado {{appName}}, lo que afecta a su tipo de evento {{title}}. Los asistentes todavía pueden reservar este tipo de evento, pero no se les pedirá que paguen. Puede ocultar el tipo de evento para evitar esto hasta que su administrador habilite de nuevo su método de pago.",
   "payment_disabled_still_able_to_book": "Los asistentes todavía pueden reservar este tipo de evento, pero no se les pedirá que paguen. Puede ocultar el tipo de evento para evitarlo hasta que su administrador reactive su método de pago.",
   "app_disabled_with_event_type": "El administrador desactivó {{appName}}, lo que afecta a su tipo de evento {{title}}.",
-  "app_disabled_video": "El administrador ha desactivado {{appName}}, lo que puede afectar a sus tipos de evento. Si tiene tipos de eventos con {{appName}} como localización, entonces el valor predeterminado será Cal Video.",
+  "app_disabled_video": "El administrador ha desactivado {{appName}}, lo que puede afectar a sus tipos de evento. Si tiene tipos de eventos con {{appName}} como localización, entonces el valor predeterminado será MeetHub Video.",
   "app_disabled_subject": "{{appName}} se desactivó",
   "navigate_installed_apps": "Ir a las aplicaciones instaladas",
   "disabled_calendar": "Si tiene otro calendario instalado, las nuevas reservas se añadirán a él. De lo contrario, conecte un nuevo calendario para que no se pierda ninguna reserva nueva.",
