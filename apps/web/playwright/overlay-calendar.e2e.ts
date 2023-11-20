@@ -5,7 +5,7 @@ export {};
 //   test.afterAll(async ({ users }) => {
 //     await users.deleteAll();
 //   });
-//   test("Continue with Cal.com flow", async ({ page, users }) => {
+//   test("Continue with MeetHub flow", async ({ page, users }) => {
 //     await users.create({
 //       username: "overflow-user-test",
 //     });

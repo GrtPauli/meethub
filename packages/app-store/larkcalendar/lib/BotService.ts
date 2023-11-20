@@ -7,12 +7,12 @@ const log = logger.getSubLogger({ prefix: [`[[LarkTenantCredential]`] });
 
 const msg = {
   en_us: {
-    title: "Welcome to Cal.com!",
+    title: "Welcome to MeetHub!",
     content: [
       [
         {
           tag: "text",
-          text: "Cal.com is an open source scheduling infrastructure.",
+          text: "MeetHub is an open source scheduling infrastructure.",
         },
       ],
       [

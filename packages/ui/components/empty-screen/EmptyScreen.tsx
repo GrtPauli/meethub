@@ -49,7 +49,7 @@ export function EmptyScreen({
         )}
         <div className="flex max-w-[420px] flex-col items-center">
           <h2
-            className={classNames("text-emphasis text-center text-xl font-bold capitalize", Icon && "mt-6")}>
+            className={classNames("text-emphasis text-center text-2xl font-black capitalize", Icon && "mt-6")}>
             {headline}
           </h2>
           {description && (

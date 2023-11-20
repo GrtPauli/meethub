@@ -2,7 +2,7 @@
 
 From the [Original RFC](https://github.com/calcom/cal.com/issues/7142):
 
-> We want to create organisations within Cal.com to enable people to easily and effectively manage multiple teams. An organisation will live above the current teams layer.
+> We want to create organisations within MeetHub to enable people to easily and effectively manage multiple teams. An organisation will live above the current teams layer.
 
 ## App setup
 

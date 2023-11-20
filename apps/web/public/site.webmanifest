@@ -1,6 +1,6 @@
 {
-    "name": "Cal.com",
-    "short_name": "Cal.com",
+    "name": "MeetHub",
+    "short_name": "MeetHub",
     "icons": [
         {
             "src": "/api/logo?type=android-chrome-192",

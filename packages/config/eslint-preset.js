@@ -26,17 +26,18 @@ module.exports = {
     "react/jsx-curly-brace-presence": ["error", { props: "never", children: "never" }],
     "react/self-closing-comp": ["error", { component: true, html: true }],
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-unused-vars": [
-      "warn",
-      {
-        vars: "all",
-        varsIgnorePattern: "^_",
-        args: "after-used",
-        argsIgnorePattern: "^_",
-        destructuredArrayIgnorePattern: "^_",
-      },
-    ],
-    "unused-imports/no-unused-imports": "error",
+    "@typescript-eslint/no-unused-vars": "off",
+    // "@typescript-eslint/no-unused-vars": [
+    //   "warn",
+    //   {
+    //     vars: "all",
+    //     varsIgnorePattern: "^_",
+    //     args: "after-used",
+    //     argsIgnorePattern: "^_",
+    //     destructuredArrayIgnorePattern: "^_",
+    //   },
+    // ],
+    "unused-imports/no-unused-imports": "off",
     "no-restricted-imports": [
       "error",
       {
@@ -62,7 +63,8 @@ module.exports = {
             disallowTypeAnnotations: false,
           },
         ],
-        "@typescript-eslint/no-explicit-any": "off"
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-unused-vars": "off",
       },
       overrides: [
         {

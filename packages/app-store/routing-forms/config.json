@@ -9,9 +9,9 @@
   "url": "https://cal.com/resources/feature/routing-forms",
   "variant": "other",
   "categories": ["automation"],
-  "publisher": "Cal.com, Inc.",
+  "publisher": "MeetHub, Inc.",
   "simplePath": "/apps/routing-forms",
-  "email": "help@cal.com",
+  "email": "meethub.dev@gmail.com",
   "licenseRequired": true,
   "teamsPlanRequired": {
     "upgradeUrl": "/routing-forms/forms"

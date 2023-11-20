@@ -2,7 +2,7 @@
   "name": "@calcom/ai",
   "version": "1.2.1",
   "private": true,
-  "author": "Cal.com Inc.",
+  "author": "MeetHub",
   "dependencies": {
     "@calcom/prisma": "*",
     "@t3-oss/env-nextjs": "^0.6.1",

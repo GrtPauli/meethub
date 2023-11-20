@@ -8,14 +8,14 @@ export const metadata = {
   installed: true,
   categories: ["other"],
   logo: "icon.svg",
-  publisher: "Cal.com",
+  publisher: "MeetHub",
   slug: "giphy",
   title: "Giphy",
   type: "giphy_other",
   url: "https://cal.com/apps/giphy",
   variant: "other",
   extendsFeature: "EventType",
-  email: "help@cal.com",
+  email: "meethub.dev@gmail.com",
   dirName: "giphy",
 } as AppMeta;
 

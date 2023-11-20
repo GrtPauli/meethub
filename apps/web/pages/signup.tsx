@@ -189,7 +189,7 @@ export default function Signup({ prepopulateFormValues, token, orgSlug, orgAutoA
                     color="secondary"
                     className="w-full justify-center"
                     onClick={() =>
-                      signIn("Cal.com", {
+                      signIn("MeetHub", {
                         callbackUrl: searchParams?.get("callbackUrl")
                           ? `${WEBAPP_URL}/${searchParams.get("callbackUrl")}`
                           : `${WEBAPP_URL}/getting-started`,
@@ -268,7 +268,7 @@ export default function Signup({ prepopulateFormValues, token, orgSlug, orgAutoA
                       color="secondary"
                       className="w-full justify-center"
                       onClick={() =>
-                        signIn("Cal.com", {
+                        signIn("MeetHub", {
                           callbackUrl: searchParams?.get("callbackUrl")
                             ? `${WEBAPP_URL}/${searchParams.get("callbackUrl")}`
                             : `${WEBAPP_URL}/getting-started`,

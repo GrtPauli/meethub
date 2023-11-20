@@ -84,7 +84,7 @@ import { TeamInviteBadge } from "./TeamInviteBadge";
 
 // need to import without ssr to prevent hydration errors
 const Tips = dynamic(() => import("@calcom/features/tips").then((mod) => mod.Tips), {
-  ssr: false,
+  ssr: false, 
 });
 
 /* TODO: Migate this */
@@ -891,7 +891,7 @@ function SideBar({ bannersHeight, user }: SideBarProps) {
         </div>
 
         <div>
-          <Tips />
+          {/* <Tips /> */}
           {bottomNavItems.map(({ icon: Icon, ...item }, index) => (
             <Tooltip side="right" content={t(item.name)} className="lg:hidden" key={item.name}>
               <ButtonOrLink

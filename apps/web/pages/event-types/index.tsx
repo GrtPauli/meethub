@@ -501,7 +501,7 @@ export const EventTypeList = ({ group, groupIndex, readOnly, types }: EventTypeL
                                   </DropdownMenuItem>
                                 </>
                               )}
-                              {!isManagedEventType && (
+                              {/* {!isManagedEventType && (
                                 <DropdownMenuItem className="outline-none">
                                   <EventTypeEmbedButton
                                     as={DropdownItem}
@@ -513,7 +513,7 @@ export const EventTypeList = ({ group, groupIndex, readOnly, types }: EventTypeL
                                     {t("embed")}
                                   </EventTypeEmbedButton>
                                 </DropdownMenuItem>
-                              )}
+                              )} */}
                               {/* readonly is only set when we are on a team - if we are on a user event type null will be the value. */}
                               {(group.metadata?.readOnly === false || group.metadata.readOnly === null) &&
                                 !isChildrenManagedEventType && (

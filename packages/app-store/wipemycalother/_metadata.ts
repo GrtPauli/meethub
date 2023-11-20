@@ -10,13 +10,13 @@ export const metadata = {
   categories: ["automation"],
   // If using static next public folder, can then be referenced from the base URL (/).
   logo: "icon-dark.svg",
-  publisher: "Cal.com",
+  publisher: "MeetHub",
   slug: "wipe-my-cal",
   title: "Wipe my cal",
   type: "wipemycal_other",
   url: "https://cal.com/apps/wipe-my-cal",
   variant: "other",
-  email: "help@cal.com",
+  email: "meethub.dev@gmail.com",
   dirName: "wipemycalother",
 } as AppMeta;
 

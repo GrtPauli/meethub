@@ -297,7 +297,7 @@ export function throwIfInviteIsToOrgAndUserExists(invitee: User, team: TeamWithP
   if ((invitee && isOrg) || (team.parentId && invitee)) {
     throw new TRPCError({
       code: "FORBIDDEN",
-      message: `You cannot add a user that already exists in Cal.com to an organization. If they wish to join via this email address, they must update their email address in their profile to that of your organization.`,
+      message: `You cannot add a user that already exists in MeetHub to an organization. If they wish to join via this email address, they must update their email address in their profile to that of your organization.`,
     });
   }
 }

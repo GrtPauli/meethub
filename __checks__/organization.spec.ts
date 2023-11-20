@@ -29,7 +29,7 @@ test.describe("Org", () => {
     test("Org Team Profile(/sales) page should be embeddable", async ({ page }) => {
       const response = await page.goto("https://i.cal.com/sales/embed");
       expect(response?.status()).toBe(200);
-      await expect(page.locator("text=Cal.com Sales")).toBeVisible();
+      await expect(page.locator("text=MeetHub Sales")).toBeVisible();
       await expectPageToBeServerSideRendered(page);
     });
 

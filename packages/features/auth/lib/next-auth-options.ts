@@ -86,7 +86,7 @@ const checkIfUserShouldBelongToOrg = async (idP: IdentityProvider, email: string
 const providers: Provider[] = [
   CredentialsProvider({
     id: "credentials",
-    name: "Cal.com",
+    name: "MeetHub",
     type: "credentials",
     credentials: {
       email: { label: "Email Address", type: "email", placeholder: "john.doe@example.com" },

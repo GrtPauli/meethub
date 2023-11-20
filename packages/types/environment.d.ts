@@ -53,8 +53,8 @@ declare namespace NodeJS {
      */
     readonly E2E_TEST_MAILHOG_ENABLED: "1" | undefined;
     readonly NEXT_PUBLIC_APP_NAME: string | "Cal";
-    readonly NEXT_PUBLIC_SUPPORT_MAIL_ADDRESS: string | "help@cal.com";
-    readonly NEXT_PUBLIC_COMPANY_NAME: string | "Cal.com, Inc.";
+    readonly NEXT_PUBLIC_SUPPORT_MAIL_ADDRESS: string | "meethub.dev@gmail.com";
+    readonly NEXT_PUBLIC_COMPANY_NAME: string | "MeetHub, Inc.";
     /**
      *  "strict" -> Strict CSP
      *  "non-strict" -> Strict CSP except the usage of unsafe-inline for `style-src`

@@ -7,8 +7,8 @@
   "url": "https://cal.com/",
   "variant": "automation",
   "categories": ["automation"],
-  "publisher": "Cal.com, Inc.",
-  "email": "help@cal.com",
+  "publisher": "MeetHub, Inc.",
+  "email": "meethub.dev@gmail.com",
   "description": "Automate without limits. The workflow automation platform that doesn't box you in, that you never outgrow",
   "__createdUsingCli": true
 }

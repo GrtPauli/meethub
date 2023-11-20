@@ -7,8 +7,8 @@
   "url": "https://cal.com/",
   "variant": "messaging",
   "categories": ["messaging"],
-  "publisher": "Cal.com, Inc.",
-  "email": "support@cal.com",
+  "publisher": "MeetHub, Inc.",
+  "email": "meethub.dev@gmail.com",
   "description": "Schedule a chat with your guests or have a WhatsApp Video call.",
   "__createdUsingCli": true,
   "appData": {

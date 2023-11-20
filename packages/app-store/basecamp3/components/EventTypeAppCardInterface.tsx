@@ -62,7 +62,7 @@ const EventTypeAppCard: EventTypeAppCardComponent = function EventTypeAppCard({ 
         </div>
         <div className="mt-2">
           Please note that as of now you can only link <span className="italic">one</span> of your projects to
-          cal.com
+          MeetHub
         </div>
       </div>
     </AppCard>

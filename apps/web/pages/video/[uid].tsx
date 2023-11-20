@@ -103,17 +103,17 @@ export default function JoinCall(props: JoinCallPageProps) {
         <meta property="twitter:title" content={`${APP_NAME} Video`} />
         <meta property="twitter:description" content={t("quick_video_meeting")} />
       </Head>
-      <div style={{ zIndex: 2, position: "relative" }}>
+      {/* <div style={{ zIndex: 2, position: "relative" }}>
         <img
           className="h-5·w-auto fixed z-10 hidden sm:inline-block"
           src={`${WEBSITE_URL}/cal-logo-word-dark.svg`}
-          alt="Cal.com Logo"
+          alt="MeetHub Logo"
           style={{
             top: 46,
             left: 24,
           }}
         />
-      </div>
+      </div> */}
       <VideoMeetingInfo booking={booking} />
     </>
   );

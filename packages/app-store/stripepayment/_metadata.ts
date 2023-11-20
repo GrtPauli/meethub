@@ -14,14 +14,14 @@ export const metadata = {
   category: "payment",
   categories: ["payment"],
   logo: "icon.svg",
-  publisher: "Cal.com",
+  publisher: "MeetHub",
   title: "Stripe",
   type: "stripe_payment",
   url: "https://cal.com/",
   docsUrl: "https://stripe.com/docs",
   variant: "payment",
   extendsFeature: "EventType",
-  email: "help@cal.com",
+  email: "meethub.dev@gmail.com",
   dirName: "stripepayment",
 } as AppMeta;
 

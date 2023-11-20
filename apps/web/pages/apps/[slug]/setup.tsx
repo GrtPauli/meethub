@@ -28,7 +28,7 @@ export default function SetupInformation(props: InferGetServerSidePropsType<type
   return (
     <>
       {/* So that the set up page does not get indexed by search engines */}
-      <HeadSeo nextSeoProps={{ noindex: true, nofollow: true }} title={`${slug} | Cal.com`} description="" />
+      <HeadSeo nextSeoProps={{ noindex: true, nofollow: true }} title={`${slug} | MeetHub`} description="" />
       <AppSetupPage slug={slug} {...props} />
     </>
   );

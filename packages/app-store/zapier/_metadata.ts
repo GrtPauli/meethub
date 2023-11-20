@@ -9,13 +9,13 @@ export const metadata = {
   category: "automation",
   categories: ["automation"],
   logo: "icon.svg",
-  publisher: "Cal.com",
+  publisher: "MeetHub",
   slug: "zapier",
   title: "Zapier",
   type: "zapier_automation",
   url: "https://cal.com/apps/zapier",
   variant: "automation",
-  email: "help@cal.com",
+  email: "meethub.dev@gmail.com",
   dirName: "zapier",
 } as AppMeta;
 

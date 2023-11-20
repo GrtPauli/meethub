@@ -10,7 +10,7 @@
 
 1. Include installation instructions and links to the app's website.
 
-2. For url use `<baseUrl>/api/integrations`, rather than `<Cal.com>/api/integrations`
+2. For url use `<baseUrl>/api/integrations`, rather than `<MeetHub>/api/integrations`
 
 #### `config.json`
 

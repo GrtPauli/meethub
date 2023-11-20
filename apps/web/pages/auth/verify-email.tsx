@@ -26,8 +26,8 @@ function VerifyEmailPage() {
   }, [data?.isVerified]);
 
   return (
-    <div className="h-[100vh] w-full ">
-      <div className="flex h-full w-full flex-col items-center justify-center">
+    <div className="bg-muted h-[100vh] w-full">
+      <div className="bg-muted flex h-full w-full flex-col items-center justify-center">
         <div className="max-w-3xl">
           <EmptyScreen
             border
@@ -35,7 +35,7 @@ function VerifyEmailPage() {
             Icon={MailOpenIcon}
             headline={t("check_your_email")}
             description={t("verify_email_page_body", { email: session?.user?.email, appName: APP_NAME })}
-            className="bg-default"
+            className="bg-default shadow-xl"
             buttonRaw={
               <Button
                 color="minimal"

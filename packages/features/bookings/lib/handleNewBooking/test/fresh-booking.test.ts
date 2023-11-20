@@ -958,7 +958,7 @@ describe("handleNewBooking", () => {
       "Availability Check during booking",
       () => {
         test(
-          `should fail a booking if there is already a Cal.com booking overlapping the time`,
+          `should fail a booking if there is already a MeetHub booking overlapping the time`,
           async ({}) => {
             const handleNewBooking = (await import("@calcom/features/bookings/lib/handleNewBooking")).default;
 

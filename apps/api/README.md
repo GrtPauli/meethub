@@ -7,13 +7,13 @@
   <a href="https://cal.com/docs/enterprise-features/api#api-server-specifications">Read the API docs</a>
 </div>
 
-# Commercial Cal.com Public API
+# Commercial MeetHub Public API
 
-Welcome to the Public API ("/apps/api") of the Cal.com.
+Welcome to the Public API ("/apps/api") of the MeetHub.
 
 This is the public REST api for cal.com.
 It exposes CRUD Endpoints of all our most important resources.
-And it makes it easy for anyone to integrate with Cal.com at the application programming level.
+And it makes it easy for anyone to integrate with MeetHub at the application programming level.
 
 ## Stack
 

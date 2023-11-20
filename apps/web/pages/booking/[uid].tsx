@@ -312,7 +312,7 @@ export default function Success(props: SuccessProps) {
   const rescheduleProviderName = guessEventLocationType(rescheduleLocation)?.label;
 
   return (
-    <div className={isEmbed ? "" : "h-screen"} data-testid="success-page">
+    <div className={isEmbed ? "bg-muted" : "bg-muted h-screen"} data-testid="success-page">
       {!isEmbed && (
         <EventReservationSchema
           reservationId={bookingInfo.uid}
@@ -352,8 +352,8 @@ export default function Success(props: SuccessProps) {
               aria-hidden="true">
               <div
                 className={classNames(
-                  "inline-block transform overflow-hidden rounded-lg border sm:my-8 sm:max-w-xl",
-                  !isBackgroundTransparent && " bg-default dark:bg-muted border-booker border-booker-width",
+                  "bg-default inline-block transform overflow-hidden rounded-lg border shadow-xl sm:my-8 sm:max-w-xl",
+                  !isBackgroundTransparent && " bg-default",
                   "px-8 pb-4 pt-5 text-left align-bottom transition-all sm:w-full sm:py-8 sm:align-middle"
                 )}
                 role="dialog"
@@ -382,7 +382,7 @@ export default function Success(props: SuccessProps) {
                 </div>
                 <div className="mb-8 mt-6 text-center last:mb-0">
                   <h3
-                    className="text-emphasis text-2xl font-semibold leading-6"
+                    className="text-emphasis text-2xl font-black leading-6"
                     data-testid={isCancelled ? "cancelled-headline" : ""}
                     id="modal-headline">
                     {needsConfirmation && !isCancelled

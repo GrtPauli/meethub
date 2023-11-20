@@ -60,7 +60,7 @@ describe("Tests for HeadSeo component", () => {
     const { container } = render(<HeadSeo {...basicProps} />);
     await waitFor(async () => {
       const titleEl = container.querySelector("title");
-      expect(titleEl?.getAttribute("title")).toEqual(`${basicProps.title} | Cal.com`);
+      expect(titleEl?.getAttribute("title")).toEqual(`${basicProps.title} | MeetHub`);
     });
   });
 

@@ -12,10 +12,10 @@ export const metadata = {
   categories: ["calendar"],
   category: "calendar",
   logo: "icon.svg",
-  publisher: "Cal.com",
+  publisher: "MeetHub",
   slug: "apple-calendar",
   url: "https://cal.com/",
-  email: "help@cal.com",
+  email: "meethub.dev@gmail.com",
   dirName: "applecalendar",
 } as AppMeta;
 

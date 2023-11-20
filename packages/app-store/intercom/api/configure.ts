@@ -27,13 +27,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const input: InputComponent = {
     type: "input",
     id: "submit_booking_url",
-    label: "Enter your Cal.com link",
+    label: "Enter your MeetHub link",
     placeholder: "https://cal.com/valentinchmara/30min",
     save_state: "unsaved",
     action: {
       type: "submit",
     },
-    aria_label: "Enter your Cal.com link",
+    aria_label: "Enter your MeetHub link",
   };
 
   const defaultCanvasData: NewCanvas = {
@@ -118,7 +118,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   const text: TextComponent = {
     type: "text",
-    text: "Or choose another Cal.com link:",
+    text: "Or choose another MeetHub link:",
     style: "muted",
     align: "left",
   };

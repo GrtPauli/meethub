@@ -3,8 +3,8 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
-  "description": "Cal.com Atoms",
-  "authors": "Cal.com, Inc.",
+  "description": "MeetHub Atoms",
+  "authors": "MeetHub, Inc.",
   "version": "1.0.0",
   "scripts": {
     "build": "node build.mjs"

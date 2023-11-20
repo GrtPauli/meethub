@@ -10,12 +10,12 @@ export const metadata = {
   categories: ["conferencing"],
   variant: "conferencing",
   logo: "icon.svg",
-  publisher: "Cal.com",
+  publisher: "MeetHub",
   url: "https://zoom.us/",
   category: "conferencing",
   slug: "zoom",
   title: "Zoom Video",
-  email: "help@cal.com",
+  email: "meethub.dev@gmail.com",
   appData: {
     location: {
       default: false,
