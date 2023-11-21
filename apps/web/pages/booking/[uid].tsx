@@ -312,7 +312,7 @@ export default function Success(props: SuccessProps) {
   const rescheduleProviderName = guessEventLocationType(rescheduleLocation)?.label;
 
   return (
-    <div className={isEmbed ? "bg-muted" : "bg-muted h-screen"} data-testid="success-page">
+    <div className={isEmbed ? "bg-muted" : "bg-muted min-h-screen"} data-testid="success-page">
       {!isEmbed && (
         <EventReservationSchema
           reservationId={bookingInfo.uid}

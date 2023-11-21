@@ -60,7 +60,7 @@ export const Day = ({
       className={classNames(
         "disabled:text-bookinglighter absolute bottom-0 left-0 right-0 top-0 mx-auto w-full rounded-md border-2 border-transparent text-center text-sm font-medium disabled:cursor-default disabled:border-transparent disabled:font-light ",
         active
-          ? "bg-brand-default text-brand"
+          ? "bg-brand-default text-white"
           : !disabled
           ? " hover:border-brand-default text-emphasis bg-emphasis"
           : "text-muted"

@@ -39,7 +39,7 @@ export const BookerSeo = (props: BookerSeoProps) => {
   const profileImage = event?.profile?.image;
   const title = event?.title ?? "";
   return (
-    <div className="relative px-10">
+    // <div className="">
       <HeadSeo
         title={`${rescheduleUid && !!bookingData ? t("reschedule") : ""} ${title} | ${profileName}`}
         description={`${rescheduleUid ? t("reschedule") : ""} ${title}`}
@@ -59,6 +59,6 @@ export const BookerSeo = (props: BookerSeoProps) => {
         }}
         isBrandingHidden={hideBranding}
       />
-    </div>
+    // </div>
   );
 };

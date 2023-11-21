@@ -26,7 +26,7 @@ export const EventMembers = ({ schedulingType, users, profile, entity }: EventMe
     (profile.name !== users[0].name && schedulingType === SchedulingType.COLLECTIVE);
 
   return (
-    <>
+    <div className="flex items-center gap-2">
       {entity.orgSlug ? (
         <UserAvatarGroupWithOrg
           size="sm"
@@ -49,6 +49,6 @@ export const EventMembers = ({ schedulingType, users, profile, entity }: EventMe
               .filter((name) => name)
               .join(", ")}
       </p>
-    </>
+    </div>
   );
 };
