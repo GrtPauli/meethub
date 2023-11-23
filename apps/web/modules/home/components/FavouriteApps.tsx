@@ -10,7 +10,7 @@ const FavouriteApps = () => {
       </p>
 
       <div className="mt-10 grid grid-cols-8 gap-8">
-        <App src="/app-store/googlevideo/icon.svg" alt="google-meet" />
+        {/* <App src="/app-store/googlevideo/icon.svg" alt="google-meet" /> */}
         <App src="/app-store/googlecalendar/icon.svg" alt="google-meet" />
         <App src="/app-store/applecalendar/icon.svg" alt="google-meet" />
         <App src="/app-store/discord/icon.svg" alt="google-meet" />
