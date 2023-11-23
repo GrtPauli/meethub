@@ -7,6 +7,7 @@ export default function Logo({
   className,
   src = "/api/logo",
   theme,
+  imgClass
 }: {
   small?: boolean;
   icon?: boolean;
@@ -14,6 +15,7 @@ export default function Logo({
   className?: string;
   src?: string;
   theme?: any;
+  imgClass?: any
 }) {
   return (
     <h3 className={classNames("logo", inline && "inline", className)}>
@@ -24,16 +26,16 @@ export default function Logo({
           <>
             {theme != "dark" ? (
               <img
-                className={classNames(small ? "h-16 w-auto" : "h-20 w-auto")}
-                alt="Cal"
-                title="Cal"
+                className={classNames(imgClass ? imgClass : (small ? "h-16 w-auto" : "h-20 w-auto"))}
+                alt="MeetHub"
+                title="MeetHub"
                 src={`${src}?type=logodark`}
               />
             ) : (
               <img
-                className={classNames(small ? "h-16 w-auto" : "h-20 w-auto")}
-                alt="Cal"
-                title="Cal"
+                className={classNames(imgClass ? imgClass : (small ? "h-16 w-auto" : "h-20 w-auto"))}
+                alt="MeetHub"
+                title="MeetHub"
                 src={src}
               />
             )}
