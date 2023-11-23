@@ -534,13 +534,13 @@ const navigation: NavigationItemType[] = [
     href: "/availability",
     icon: Clock,
   },
-  {
-    name: "teams",
-    href: "/teams",
-    icon: Users,
-    onlyDesktop: true,
-    badge: <TeamInviteBadge />,
-  },
+  // {
+  //   name: "teams",
+  //   href: "/teams",
+  //   icon: Users,
+  //   onlyDesktop: true,
+  //   badge: <TeamInviteBadge />,
+  // },
   {
     name: "apps",
     href: "/apps",

@@ -15,9 +15,9 @@ export const Navbar = () => {
       <div className="flex items-center gap-12">
         <Logo theme={theme} small inline={false} />
         <div className="text-default mt-1 flex items-center gap-8">
-          <Link href="">
+          {/* <Link href="">
             <p className="font-regular">Pricing</p>
-          </Link>
+          </Link> */}
 
           <Link href="">
             <p className="font-regular">Product</p>
@@ -27,9 +27,9 @@ export const Navbar = () => {
             <p className="font-regular">Blogs</p>
           </Link>
 
-          <Link href="">
+          {/* <Link href="">
             <p className="font-regular">Help</p>
-          </Link>
+          </Link> */}
         </div>
       </div>
 
