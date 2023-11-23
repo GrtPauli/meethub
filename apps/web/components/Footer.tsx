@@ -114,7 +114,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-muted px-20 pb-5 pt-10">
+    <div className="bg-muted px-20 cus-md3:px-14 cus-xs:!p-5 pb-5 pt-10">
       <div className="flex items-center justify-between">
         <Logo theme={theme} imgClass="h-20 w-auto cus-md3:h-10" inline={false} className="-translate-x-5 " />
         <div className="text-default flex items-center gap-5 text-2xl cus-md3:text-xl">

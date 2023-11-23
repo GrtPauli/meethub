@@ -6,12 +6,12 @@ const HomeHeroSection = () => {
           <source src="/hero.mp4" type="video/mp4" />
         </video>
 
-        <div className="absolute top-0 flex h-full w-full flex-col items-center justify-center bg-black/70">
-          <h1 className="text-center text-5xl cus-sm:text-3xl cus-sm2:text-2xl font-black leading-normal text-white">
+        <div className="absolute top-0 px-5 flex h-full w-full flex-col items-center justify-center bg-black/70">
+          <h1 className="text-center text-5xl cus-sm:text-3xl cus-sm2:text-2xl cus-xs:!text-xl font-black leading-normal text-white">
             Scheduling And Collaboration
             <br /> Made Easy
           </h1>
-          <p className="text-center text-xl cus-sm:text-lg cus-sm2:text-base font-light leading-normal text-white">
+          <p className="text-center text-xl cus-sm:text-lg cus-sm2:text-base cus-xs:!text-sm font-light leading-normal text-white">
             MeetHub is your scheduling automation platform for eliminating the back-and-forth
             <br />
             emails to find the perfect time — and so much more.

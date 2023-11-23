@@ -38,7 +38,7 @@ interface FeatureItemProps {
 const FeatureItem = ({ description, imgSrc, title }: FeatureItemProps) => {
   return (
     <div className="bg-brand-default overflow-hidden rounded-2xl shadow-xl">
-      <div className="px-8 pb-5 pt-8 text-white">
+      <div className="px-8 pb-5 pt-8 cus-sm2:px-5 cus-sm2:pt-5 text-white">
         <h1 className="mb-1 text-xl cus-sm:text-lg cus-sm2:text-base font-bold">{title}</h1>
         <p className="text-base cus-sm:text-sm cus-sm2:text-xs font-light leading-relaxed">{description}</p>
       </div>

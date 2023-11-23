@@ -13,8 +13,8 @@ export const Navbar = () => {
   return (
     <div className="bg-default flex items-center justify-between px-12">
       <div className="flex items-center gap-12">
-        <Logo theme={theme} small inline={false} />
-        <div className="text-default mt-1 flex items-center gap-8">
+        <Logo theme={theme} imgClass="w-auto h-16 cus-sm2:!h-10" inline={false} />
+        <div className="text-default mt-1 flex cus-sm2:hidden items-center gap-8">
           {/* <Link href="">
             <p className="font-regular">Pricing</p>
           </Link> */}
@@ -37,7 +37,7 @@ export const Navbar = () => {
         <>
           {status == "authenticated" ? (
             <Link href="/event-types">
-              <Button color="primary" className="!px-8">
+              <Button color="primary" className="!px-8 cus-sm2:!px-5">
                 Go to App
               </Button>
             </Link>
