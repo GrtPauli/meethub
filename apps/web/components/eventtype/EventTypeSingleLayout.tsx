@@ -113,12 +113,12 @@ function getNavigation(props: {
       //TODO: Handle proper translation with count handling
       info: `${installedAppsNumber} apps, ${enabledAppsNumber} ${t("active")}`,
     },
-    {
-      name: "workflows",
-      href: `/event-types/${eventType.id}?tabName=workflows`,
-      icon: Zap,
-      info: `${enabledWorkflowsNumber} ${t("active")}`,
-    },
+    // {
+    //   name: "workflows",
+    //   href: `/event-types/${eventType.id}?tabName=workflows`,
+    //   icon: Zap,
+    //   info: `${enabledWorkflowsNumber} ${t("active")}`,
+    // },
   ];
 }
 
@@ -214,12 +214,12 @@ function EventTypeSingleLayout({
     }
     const showWebhooks = !(isManagedEventType || isChildrenManagedEventType);
     if (showWebhooks) {
-      navigation.push({
-        name: "webhooks",
-        href: `/event-types/${eventType.id}?tabName=webhooks`,
-        icon: TbWebhook,
-        info: `${eventType.webhooks.filter((webhook) => webhook.active).length} ${t("active")}`,
-      });
+      // navigation.push({
+      //   name: "webhooks",
+      //   href: `/event-types/${eventType.id}?tabName=webhooks`,
+      //   icon: TbWebhook,
+      //   info: `${eventType.webhooks.filter((webhook) => webhook.active).length} ${t("active")}`,
+      // });
     }
     return navigation;
   }, [
@@ -317,7 +317,7 @@ function EventTypeSingleLayout({
                     showToast("Link copied!", "success");
                   }}
                 />
-                <EventTypeEmbedButton
+                {/* <EventTypeEmbedButton
                   embedUrl={encodeURIComponent(embedLink)}
                   StartIcon={Code}
                   color="secondary"
@@ -326,7 +326,7 @@ function EventTypeSingleLayout({
                   tooltipSide="bottom"
                   tooltipOffset={4}
                   eventId={eventType.id}
-                />
+                /> */}
               </>
             )}
             {!isChildrenManagedEventType && (
