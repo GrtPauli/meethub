@@ -93,6 +93,13 @@ module.exports = {
       },
       screens: {
         pwa: { raw: "(display-mode: standalone)" },
+        "cus-xs": { max: "500px" },
+        "cus-md": { max: "1300px" },
+        "cus-md2": { max: "1150px" },
+        "cus-md3": { max: "1000px" },
+        "cus-lg": { max: "1500px" },
+        "cus-sm": { max: "768px" },
+        "cus-sm2": { max: "640px" },
       },
       keyframes: {
         "fade-in-up": {
