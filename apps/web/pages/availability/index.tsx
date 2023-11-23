@@ -159,7 +159,7 @@ export default function AvailabilityPage() {
         subtitle={t("configure_availability")}
         CTA={
           <div className="flex gap-2">
-            <ToggleGroup
+            {/* <ToggleGroup
               className="hidden md:block"
               defaultValue={searchParams?.get("type") ?? "mine"}
               onValueChange={(value) => {
@@ -170,7 +170,7 @@ export default function AvailabilityPage() {
                 { value: "mine", label: t("my_availability") },
                 { value: "team", label: t("team_availability") },
               ]}
-            />
+            /> */}
             <NewScheduleButton />
           </div>
         }>
